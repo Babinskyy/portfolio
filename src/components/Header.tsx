@@ -12,16 +12,18 @@ const Header = (props: HeaderProps): JSX.Element => {
   };
   return (
     <header className={`header ${props.darkTheme && "dark"}`}>
-      <div className="logo">Yan Software</div>
-      <div className="toggle-switch">
-        <label className={`${props.darkTheme && "dark"}`}>
-          <input
-            type="checkbox"
-            onChange={handleModeChange}
-            checked={!props.darkTheme}
-          />
-          <span className="slider-toggle"></span>
-        </label>
+      <div className="header-container">
+        <div className="logo">Yan Software</div>
+        <div className="toggle-switch">
+          <label className={`${props.darkTheme && "dark"}`}>
+            <input
+              type="checkbox"
+              onChange={handleModeChange}
+              checked={!props.darkTheme}
+            />
+            <span className="slider-toggle"></span>
+          </label>
+        </div>
       </div>
     </header>
   );

@@ -1,95 +1,99 @@
 .bgc-1 {
-  background-color: rgba(109, 133, 196);
+  background-color: rgba(17, 41, 239);
 }
 
 .bgc-2 {
-  background-color: rgba(27, 245, 31);
+  background-color: rgba(91, 160, 249);
 }
 
 .bgc-3 {
-  background-color: rgba(237, 192, 198);
+  background-color: rgba(207, 234, 89);
 }
 
 .bgc-4 {
-  background-color: rgba(246, 64, 155);
+  background-color: rgba(216, 214, 9);
 }
 
 .bgc-5 {
-  background-color: rgba(135, 188, 33);
+  background-color: rgba(82, 82, 76);
 }
 
 .bgc-6 {
-  background-color: rgba(46, 243, 175);
+  background-color: rgba(120, 194, 45);
 }
 
 .bgc-7 {
-  background-color: rgba(206, 109, 102);
+  background-color: rgba(171, 141, 129);
 }
 
 .bgc-8 {
-  background-color: rgba(97, 105, 133);
+  background-color: rgba(131, 152, 91);
 }
 
 .bgc-9 {
-  background-color: rgba(225, 167, 203);
+  background-color: rgba(181, 237, 216);
 }
 
 .bgc-10 {
-  background-color: rgba(175, 186, 56);
+  background-color: rgba(99, 218, 243);
 }
 
 .bgc-11 {
-  background-color: rgba(165, 199, 122);
+  background-color: rgba(88, 15, 163);
 }
 
 .bgc-12 {
-  background-color: rgba(108, 177, 118);
+  background-color: rgba(178, 208, 250);
 }
 
 .bgc-13 {
-  background-color: rgba(28, 183, 127);
+  background-color: rgba(20, 152, 173);
 }
 
 .bgc-14 {
-  background-color: rgba(171, 170, 42);
+  background-color: rgba(251, 47, 20);
 }
 
 .bgc-15 {
-  background-color: rgba(139, 204, 240);
+  background-color: rgba(109, 29, 228);
 }
 
 .bgc-16 {
-  background-color: rgba(82, 103, 193);
+  background-color: rgba(219, 103, 34);
 }
 
 .bgc-17 {
-  background-color: rgba(145, 16, 15);
+  background-color: rgba(103, 74, 116);
 }
 
 .bgc-18 {
-  background-color: rgba(162, 215, 137);
+  background-color: rgba(17, 121, 79);
 }
 
 .bgc-19 {
-  background-color: rgba(206, 103, 31);
+  background-color: rgba(174, 167, 140);
 }
 
 .header {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px 0px 20px 0px;
+}
+.header .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: normal;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 20px 40px 20px 40px;
+  width: 80%;
+  margin: 0 auto;
 }
-.header.dark {
+.header .header-container.dark {
   background-color: #333333;
 }
-.header .logo {
+.header .header-container .logo {
   font-size: 30px;
   font-weight: 700;
 }
-.header .toggle-switch {
+.header .header-container .toggle-switch {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -98,10 +102,10 @@
   width: 50px;
   transition: 0.2s;
 }
-.header .toggle-switch:hover {
+.header .header-container .toggle-switch:hover {
   transform: scale(1.2);
 }
-.header .toggle-switch label {
+.header .header-container .toggle-switch label {
   position: absolute;
   width: 100%;
   height: 25px;
@@ -109,24 +113,24 @@
   border-radius: 50px;
   cursor: pointer;
 }
-.header .toggle-switch label.dark {
+.header .header-container .toggle-switch label.dark {
   background-color: #444;
 }
-.header .toggle-switch label input {
+.header .header-container .toggle-switch label input {
   position: absolute;
   display: none;
 }
-.header .toggle-switch label .slider-toggle {
+.header .header-container .toggle-switch label .slider-toggle {
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 50px;
   transition: 0.3s;
 }
-.header .toggle-switch label input:checked ~ .slider-toggle {
+.header .header-container .toggle-switch label input:checked ~ .slider-toggle {
   background-color: #fff;
 }
-.header .toggle-switch label .slider-toggle::before {
+.header .header-container .toggle-switch label .slider-toggle::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -138,30 +142,102 @@
   background-color: #444444;
   transition: 0.3s;
 }
-.header .toggle-switch label input:checked ~ .slider-toggle::before {
+.header .header-container .toggle-switch label input:checked ~ .slider-toggle::before {
   transform: translateX(23px);
   background-color: #444444;
   box-shadow: none;
 }
 
 .content {
+  max-width: 80%;
+  margin: 0 auto;
   padding: 20px;
 }
-.content .image-container {
+.content .greetings-container {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 40px 0px;
+}
+.content .greetings-container .image-container {
   display: flex;
   flex-direction: initial;
   justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 300px;
+  align-items: flex-end;
+  min-width: 200px;
+  min-height: 200px;
   border-radius: 50%;
   background-color: #bebebe;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.content .image-container img {
-  height: 300px;
+.content .greetings-container .image-container.dark {
+  background-color: #333333;
+}
+.content .greetings-container .image-container img {
+  height: 190px;
   background-position: center;
+}
+.content .greetings-container .greetings {
+  font-size: 80px;
+  font-weight: 600;
+  align-self: center;
+  place-self: center;
+  justify-self: center;
+}
+.content .skills-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: normal;
+}
+.content .skills-paragraph h3 {
+  font-size: 30px;
+  margin: 0 auto;
+}
+.content .skills-paragraph .skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content .skills-paragraph .skills-container .skill {
+  margin: 10px;
+  width: 110px;
+  height: 110px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content .skills-paragraph .skills-container .skill.js {
+  background-image: url("../../../images/skills/js.png");
+}
+.content .skills-paragraph .skills-container .skill.ts {
+  background-image: url("../../../images/skills/typescript.jpeg");
+}
+.content .skills-paragraph .skills-container .skill.react {
+  background-image: url("../../../images/skills/react.png");
+}
+.content .skills-paragraph .skills-container .skill.mongo {
+  background-image: url("../../../images/skills/mongo.jpg");
+}
+.content .skills-paragraph .skills-container .skill.postgres {
+  background-image: url("../../../images/skills/postgres.png");
+}
+.content .skills-paragraph .skills-container .skill.node {
+  background-image: url("../../../images/skills/node.png");
+}
+.content .skills-paragraph .skills-container .skill.express {
+  background-image: url("../../../images/skills/express.png");
+}
+.content .skills-paragraph .skills-container .skill.ionic {
+  background-image: url("../../../images/skills/ionic.png");
+}
+.content .portfolio {
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .App {

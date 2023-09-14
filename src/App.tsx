@@ -16,7 +16,8 @@ function App() {
   return (
     <div className={`App ${darkTheme && ' dark'}`}>
      <Header setDarkTheme={setDarkTheme} darkTheme={darkTheme}/>
-     <Content/>
+     <Content darkTheme={darkTheme}/>
+     <canvas></canvas>
     </div>
   );
 }

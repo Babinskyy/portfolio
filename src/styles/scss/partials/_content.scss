@@ -1,17 +1,83 @@
-.content{
-    padding: 20px;
-    .image-container{
-        @include flexbox(initial, center, center);
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        background-color: $secondary-color;
-        overflow: hidden;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        img{
-            // width: 300px;
-            height: 300px;
+.content {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  .greetings-container {
+    @include flexbox(initial, space-between, center);
+    margin: 20px 0px 40px 0px;
+    .image-container {
+      @include flexbox(initial, center, flex-end);
+      min-width: 200px;
+      min-height: 200px;
+      border-radius: 50%;
+      background-color: $secondary-color;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      &.dark {
+        background-color: $secondary-color-dark;
+      }
+      img {
+        height: 190px;
+        background-position: center;
+      }
+    }
+    .greetings {
+      font-size: 80px;
+      font-weight: 600;
+      align-self: center;
+      place-self: center;
+      justify-self: center;
+      //   margin-left: 50px;
+    }
+  }
+
+  .skills-paragraph{
+    @include flexbox(column);
+    h3{
+        font-size: 30px;
+        // width: 100%;
+        margin: 0 auto;
+    }
+    .skills-container{
+        @include flexbox(row, space-between, center);
+        flex-wrap: wrap;
+        .skill {
+            margin: 10px;
+            width: 110px;
+            height: 110px;
             background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &.js{
+            background-image: url("../../../images/skills/js.png");
+            }
+            &.ts{
+                background-image: url("../../../images/skills/typescript.jpeg");
+            }
+            &.react{
+                background-image: url("../../../images/skills/react.png");
+            }
+            &.mongo{
+                background-image: url("../../../images/skills/mongo.jpg");
+            }
+            &.postgres{
+                background-image: url("../../../images/skills/postgres.png");
+            }
+            &.node{
+                background-image: url("../../../images/skills/node.png");
+            }
+            &.express{
+                background-image: url("../../../images/skills/express.png");
+            }
+            &.ionic{
+                background-image: url("../../../images/skills/ionic.png");
+            }
+                
         }
     }
+  }
+  .portfolio {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
 }

@@ -5,9 +5,10 @@
 @import "./styles/scss/partials/content";
 
 .App {
-  min-height:100vh ;
+  min-height: 100vh;
   background-color: $primary-color;
   color: $contrast-color;
+
   &.dark {
     background-color: $primary-color-dark;
     color: $contrast-color-dark;
