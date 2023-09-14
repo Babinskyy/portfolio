@@ -1,0 +1,15 @@
+@import "./styles/scss/utilities/variables";
+@import "./styles/scss/utilities/mixins";
+
+@import "./styles/scss/partials/header";
+@import "./styles/scss/partials/content";
+
+.App {
+  min-height:100vh ;
+  background-color: $primary-color;
+  color: $contrast-color;
+  &.dark {
+    background-color: $primary-color-dark;
+    color: $contrast-color-dark;
+  }
+}

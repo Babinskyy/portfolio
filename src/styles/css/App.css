@@ -1,0 +1,175 @@
+.bgc-1 {
+  background-color: rgba(109, 133, 196);
+}
+
+.bgc-2 {
+  background-color: rgba(27, 245, 31);
+}
+
+.bgc-3 {
+  background-color: rgba(237, 192, 198);
+}
+
+.bgc-4 {
+  background-color: rgba(246, 64, 155);
+}
+
+.bgc-5 {
+  background-color: rgba(135, 188, 33);
+}
+
+.bgc-6 {
+  background-color: rgba(46, 243, 175);
+}
+
+.bgc-7 {
+  background-color: rgba(206, 109, 102);
+}
+
+.bgc-8 {
+  background-color: rgba(97, 105, 133);
+}
+
+.bgc-9 {
+  background-color: rgba(225, 167, 203);
+}
+
+.bgc-10 {
+  background-color: rgba(175, 186, 56);
+}
+
+.bgc-11 {
+  background-color: rgba(165, 199, 122);
+}
+
+.bgc-12 {
+  background-color: rgba(108, 177, 118);
+}
+
+.bgc-13 {
+  background-color: rgba(28, 183, 127);
+}
+
+.bgc-14 {
+  background-color: rgba(171, 170, 42);
+}
+
+.bgc-15 {
+  background-color: rgba(139, 204, 240);
+}
+
+.bgc-16 {
+  background-color: rgba(82, 103, 193);
+}
+
+.bgc-17 {
+  background-color: rgba(145, 16, 15);
+}
+
+.bgc-18 {
+  background-color: rgba(162, 215, 137);
+}
+
+.bgc-19 {
+  background-color: rgba(206, 103, 31);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px 40px 20px 40px;
+}
+.header.dark {
+  background-color: #333333;
+}
+.header .logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+.header .toggle-switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  transition: 0.2s;
+}
+.header .toggle-switch:hover {
+  transform: scale(1.2);
+}
+.header .toggle-switch label {
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.header .toggle-switch label.dark {
+  background-color: #444;
+}
+.header .toggle-switch label input {
+  position: absolute;
+  display: none;
+}
+.header .toggle-switch label .slider-toggle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.header .toggle-switch label input:checked ~ .slider-toggle {
+  background-color: #fff;
+}
+.header .toggle-switch label .slider-toggle::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: inset 5px -2px 0px 0px #fff;
+  background-color: #444444;
+  transition: 0.3s;
+}
+.header .toggle-switch label input:checked ~ .slider-toggle::before {
+  transform: translateX(23px);
+  background-color: #444444;
+  box-shadow: none;
+}
+
+.content {
+  padding: 20px;
+}
+.content .image-container {
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #bebebe;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.content .image-container img {
+  height: 300px;
+  background-position: center;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: #e2e2e2;
+  color: #000;
+}
+.App.dark {
+  background-color: #444;
+  color: #fff;
+}/*# sourceMappingURL=App.css.map */
