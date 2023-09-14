@@ -29,8 +29,7 @@
       justify-self: center;
       //   margin-left: 50px;
     }
-    .filler{
-
+    .filler {
       min-width: 200px;
       min-height: 200px;
     }
@@ -81,29 +80,20 @@
     }
   }
   .portfolio {
-    width: 700px;
     margin: 50px auto;
-    // background-color: antiquewhite;
+
     .website-container {
       @include flexbox(column, center, center);
-      width: 700px;
-      height: 400px;
+
       .website-preview {
         position: relative;
-        height: 100%;
-        width: 100%;
-        background-image: url("../../../images/websites/marketplace-light.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border: 2px solid black;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         transition: 0.3s;
-        cursor: pointer;
-        
-        &.dark {
-          background-image: url("../../../images/websites/marketplace-dark.png");
+        margin-bottom: 20px;
+        img {
+          width: 100%;
+          max-width: 800px;
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
         &:hover {
           opacity: 0.5;
@@ -111,25 +101,27 @@
       }
       a {
         position: absolute;
-        width: 100px;
-        height: 40px;
+        
         border-radius: 10px;
-        background-color: #247afc;
         border: none;
         opacity: 0;
         transition: 0.3s;
         text-decoration: none;
         text-align: center;
-        line-height: 35px;
-        padding: 5px;
         color: #fff;
+        padding: 15px 15px 10px 15px;
         cursor: pointer;
+        
+        img {
+          width: 250px;
+          border-radius: 10px;
+        }
       }
-      &:hover{
-        a{
+      &:hover {
+        a {
           opacity: 1;
         }
-        .website-preview{
+        .website-preview {
           opacity: 0.5;
         }
       }

@@ -1,6 +1,6 @@
-import pic from "../images/papugapic2.png";
-import marketLight from "../images/websites/marketplace-light.png";
-import marketDark from "../images/websites/marketplace-dark.png";
+import websites from "../data/websites";
+
+import pic from "../images/others/papugapic2.png";
 
 type ContentProps = {
   darkTheme: boolean;
@@ -33,10 +33,29 @@ const Content = (props: ContentProps): JSX.Element => {
       </div>
       <hr />
       <div className="portfolio">
-        <div className="website-container">
-          <div className={`website-preview ${props.darkTheme && "dark"}`}></div>
-          <a href="https://marketplace.babinsky.pl/" target="_blank">Market Place</a>
-        </div>
+        {websites.map((e, i) => {
+          return (
+            <div className="website-container">
+              <div className={`website-preview ${props.darkTheme && "dark"}`}>
+                <img
+                  src={props.darkTheme ? e.preview.dark : e.preview.light}
+                  alt=""
+                />
+              </div>
+              <a
+                href={e.url}
+                target="_blank"
+                style={{ backgroundColor: e.color }}
+              >
+                <img
+                  src={props.darkTheme ? e.logo.dark : e.logo.light}
+                  alt=""
+                  style={{ width: e.width }}
+                />
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -9,10 +9,18 @@
     &.dark {
       background-color: $secondary-color-dark;
     }
-    .logo {
-      font-size: 30px;
-      font-weight: 700;
+    .logo-container{
+      @include flexbox(row, space-between, center);
+      width: 240px;
+      .icon{
+        width: 40px;
+      }
+      .logo {
+        font-size: 30px;
+        font-weight: 700;
+      }
     }
+   
     .toggle-switch {
       @include flexbox(row, center, center);
       position: relative;
