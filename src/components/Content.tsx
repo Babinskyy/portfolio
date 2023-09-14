@@ -14,7 +14,7 @@ const Content = (props: ContentProps): JSX.Element => {
           <img src={pic} alt="" />
         </div>
         <h1 className="greetings">Hello, I'm Jan.</h1>
-        <div></div>
+        <div className="filler"></div>
       </div>
 
       <hr />

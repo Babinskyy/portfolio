@@ -1,77 +1,77 @@
 .bgc-1 {
-  background-color: rgba(98, 38, 41);
+  background-color: rgba(27, 90, 121);
 }
 
 .bgc-2 {
-  background-color: rgba(192, 158, 239);
+  background-color: rgba(66, 16, 92);
 }
 
 .bgc-3 {
-  background-color: rgba(30, 51, 232);
+  background-color: rgba(229, 187, 134);
 }
 
 .bgc-4 {
-  background-color: rgba(54, 153, 63);
+  background-color: rgba(62, 128, 214);
 }
 
 .bgc-5 {
-  background-color: rgba(146, 150, 168);
+  background-color: rgba(117, 121, 136);
 }
 
 .bgc-6 {
-  background-color: rgba(178, 253, 244);
+  background-color: rgba(166, 127, 10);
 }
 
 .bgc-7 {
-  background-color: rgba(185, 235, 8);
+  background-color: rgba(242, 31, 110);
 }
 
 .bgc-8 {
-  background-color: rgba(94, 213, 78);
+  background-color: rgba(4, 49, 84);
 }
 
 .bgc-9 {
-  background-color: rgba(107, 202, 39);
+  background-color: rgba(1, 42, 199);
 }
 
 .bgc-10 {
-  background-color: rgba(217, 106, 52);
+  background-color: rgba(237, 122, 81);
 }
 
 .bgc-11 {
-  background-color: rgba(249, 104, 28);
+  background-color: rgba(221, 248, 42);
 }
 
 .bgc-12 {
-  background-color: rgba(211, 243, 223);
+  background-color: rgba(124, 95, 61);
 }
 
 .bgc-13 {
-  background-color: rgba(137, 57, 48);
+  background-color: rgba(255, 9, 226);
 }
 
 .bgc-14 {
-  background-color: rgba(86, 120, 230);
+  background-color: rgba(45, 77, 207);
 }
 
 .bgc-15 {
-  background-color: rgba(131, 226, 43);
+  background-color: rgba(57, 186, 14);
 }
 
 .bgc-16 {
-  background-color: rgba(90, 53, 161);
+  background-color: rgba(80, 126, 187);
 }
 
 .bgc-17 {
-  background-color: rgba(61, 80, 153);
+  background-color: rgba(170, 24, 142);
 }
 
 .bgc-18 {
-  background-color: rgba(33, 45, 212);
+  background-color: rgba(179, 253, 26);
 }
 
 .bgc-19 {
-  background-color: rgba(173, 189, 235);
+  background-color: rgba(220, 200, 56);
 }
 
 .header {
@@ -185,6 +185,10 @@
   align-self: center;
   place-self: center;
   justify-self: center;
+}
+.content .greetings-container .filler {
+  min-width: 200px;
+  min-height: 200px;
 }
 .content .skills-paragraph {
   display: flex;
