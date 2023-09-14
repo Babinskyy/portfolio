@@ -1,4 +1,6 @@
 import pic from "../images/papugapic2.png";
+import marketLight from "../images/websites/marketplace-light.png";
+import marketDark from "../images/websites/marketplace-dark.png";
 
 type ContentProps = {
   darkTheme: boolean;
@@ -31,7 +33,10 @@ const Content = (props: ContentProps): JSX.Element => {
       </div>
       <hr />
       <div className="portfolio">
-        Feel free to look at my websites!
+        <div className="website-container">
+          <div className={`website-preview ${props.darkTheme && "dark"}`}></div>
+          <a href="https://marketplace.babinsky.pl/" target="_blank">Market Place</a>
+        </div>
       </div>
     </div>
   );

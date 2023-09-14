@@ -29,7 +29,7 @@
         background-color: #fff;
         border-radius: 50px;
         &.dark {
-          background-color: #444;
+          background-color: #616161;
         }
         cursor: pointer;
         input {
@@ -58,13 +58,13 @@
           height: 15px;
           border-radius: 50%;
           box-shadow: inset 5px -2px 0px 0px #fff;
-          background-color: #444444;
+          background-color: #616161;
           transition: 0.3s;
         }
 
         input:checked ~ .slider-toggle::before {
           transform: translateX(23px);
-          background-color: #444444;
+          background-color: #616161;
           box-shadow: none;
         }
       }

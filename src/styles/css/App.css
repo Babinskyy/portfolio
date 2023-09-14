@@ -1,77 +1,77 @@
 .bgc-1 {
-  background-color: rgba(17, 41, 239);
+  background-color: rgba(98, 38, 41);
 }
 
 .bgc-2 {
-  background-color: rgba(91, 160, 249);
+  background-color: rgba(192, 158, 239);
 }
 
 .bgc-3 {
-  background-color: rgba(207, 234, 89);
+  background-color: rgba(30, 51, 232);
 }
 
 .bgc-4 {
-  background-color: rgba(216, 214, 9);
+  background-color: rgba(54, 153, 63);
 }
 
 .bgc-5 {
-  background-color: rgba(82, 82, 76);
+  background-color: rgba(146, 150, 168);
 }
 
 .bgc-6 {
-  background-color: rgba(120, 194, 45);
+  background-color: rgba(178, 253, 244);
 }
 
 .bgc-7 {
-  background-color: rgba(171, 141, 129);
+  background-color: rgba(185, 235, 8);
 }
 
 .bgc-8 {
-  background-color: rgba(131, 152, 91);
+  background-color: rgba(94, 213, 78);
 }
 
 .bgc-9 {
-  background-color: rgba(181, 237, 216);
+  background-color: rgba(107, 202, 39);
 }
 
 .bgc-10 {
-  background-color: rgba(99, 218, 243);
+  background-color: rgba(217, 106, 52);
 }
 
 .bgc-11 {
-  background-color: rgba(88, 15, 163);
+  background-color: rgba(249, 104, 28);
 }
 
 .bgc-12 {
-  background-color: rgba(178, 208, 250);
+  background-color: rgba(211, 243, 223);
 }
 
 .bgc-13 {
-  background-color: rgba(20, 152, 173);
+  background-color: rgba(137, 57, 48);
 }
 
 .bgc-14 {
-  background-color: rgba(251, 47, 20);
+  background-color: rgba(86, 120, 230);
 }
 
 .bgc-15 {
-  background-color: rgba(109, 29, 228);
+  background-color: rgba(131, 226, 43);
 }
 
 .bgc-16 {
-  background-color: rgba(219, 103, 34);
+  background-color: rgba(90, 53, 161);
 }
 
 .bgc-17 {
-  background-color: rgba(103, 74, 116);
+  background-color: rgba(61, 80, 153);
 }
 
 .bgc-18 {
-  background-color: rgba(17, 121, 79);
+  background-color: rgba(33, 45, 212);
 }
 
 .bgc-19 {
-  background-color: rgba(174, 167, 140);
+  background-color: rgba(173, 189, 235);
 }
 
 .header {
@@ -114,7 +114,7 @@
   cursor: pointer;
 }
 .header .header-container .toggle-switch label.dark {
-  background-color: #444;
+  background-color: #616161;
 }
 .header .header-container .toggle-switch label input {
   position: absolute;
@@ -139,12 +139,12 @@
   height: 15px;
   border-radius: 50%;
   box-shadow: inset 5px -2px 0px 0px #fff;
-  background-color: #444444;
+  background-color: #616161;
   transition: 0.3s;
 }
 .header .header-container .toggle-switch label input:checked ~ .slider-toggle::before {
   transform: translateX(23px);
-  background-color: #444444;
+  background-color: #616161;
   box-shadow: none;
 }
 
@@ -236,8 +236,58 @@
   background-image: url("../../../images/skills/ionic.png");
 }
 .content .portfolio {
-  font-size: 20px;
-  text-transform: uppercase;
+  width: 700px;
+  margin: 50px auto;
+}
+.content .portfolio .website-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 400px;
+}
+.content .portfolio .website-container .website-preview {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../../images/websites/marketplace-light.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.content .portfolio .website-container .website-preview.dark {
+  background-image: url("../../../images/websites/marketplace-dark.png");
+}
+.content .portfolio .website-container .website-preview:hover {
+  opacity: 0.5;
+}
+.content .portfolio .website-container a {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #247afc;
+  border: none;
+  opacity: 0;
+  transition: 0.3s;
+  text-decoration: none;
+  text-align: center;
+  line-height: 35px;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.content .portfolio .website-container:hover a {
+  opacity: 1;
+}
+.content .portfolio .website-container:hover .website-preview {
+  opacity: 0.5;
 }
 
 .App {
