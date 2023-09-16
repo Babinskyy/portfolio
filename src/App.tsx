@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.scss';
-import Header from './components/Header';
-import Content from './components/Content';
+import Header from './common/components/Header';
+import Home from './pages/Home';
+import Footer from './common/components/Footer';
 
 function App() {
   const [darkTheme, setDarkTheme] = useState<boolean>(true);
@@ -16,8 +17,8 @@ function App() {
   return (
     <div className={`App ${darkTheme && ' dark'}`}>
      <Header setDarkTheme={setDarkTheme} darkTheme={darkTheme}/>
-     <Content darkTheme={darkTheme}/>
-     <canvas></canvas>
+     <Home darkTheme={darkTheme}/>
+     <Footer darkTheme={darkTheme}/>
     </div>
   );
 }
