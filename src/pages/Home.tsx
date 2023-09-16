@@ -10,7 +10,7 @@ const Home = (props: HomeProps): JSX.Element => {
   return (
     <div className="Home">
       <Greetings darkTheme={props.darkTheme} />
-      <Skills />
+      <Skills darkTheme={props.darkTheme}/>
       <Projects darkTheme={props.darkTheme}/>
     </div>
   );

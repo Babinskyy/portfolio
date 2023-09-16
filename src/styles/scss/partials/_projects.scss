@@ -1,0 +1,83 @@
+.portfolio {
+  margin: 50px auto;
+  width: 900px;
+  h3 {
+    font-size: 30px;
+    width: 250px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    text-align: center
+  }
+  .website-container {
+    @include flexbox(column, center, center);
+
+    a {
+      .website-preview {
+        transition: 0.3s;
+        margin-bottom: 30px;
+        img {
+          width: 100%;
+          // max-width: 800px;
+        max-height: 600px;
+
+          border-radius: 10px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+      }
+    }
+    a.logo-container {
+      position: absolute;
+      border-radius: 10px;
+      border: none;
+      opacity: 0;
+      transition: 0.3s;
+      text-decoration: none;
+      text-align: center;
+      color: #fff;
+      padding: 15px 15px 10px 15px;
+      cursor: pointer;
+
+      img {
+        width: 100px;
+        border-radius: 10px;
+      }
+    }
+
+    &:hover {
+      a.logo-container {
+        opacity: 1;
+      }
+      .website-preview {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolio {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .portfolio {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .portfolio {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 520px) {
+ 
+  .portfolio {
+    width: 390px;
+  }
+}
+@media screen and (max-width: 450px) {
+ 
+  .portfolio {
+    width: 350px;
+  }
+}

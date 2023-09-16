@@ -1,0 +1,55 @@
+.greetings-container {
+  @include flexbox(column, initial, center);
+  margin: 40px 0px 0px 0px;
+  width: 100%;
+  .image-container {
+    @include flexbox(initial, center, flex-end);
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+    background-color: $secondary-color;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    &.dark {
+      background-color: $secondary-color-dark;
+    }
+    img {
+      height: 190px;
+      background-position: center;
+    }
+  }
+  .greetings {
+    font-size: 80px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 520px) {
+  .greetings-container {
+ 
+    width: 400px;
+    .greetings {
+      font-size: 60px;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .greetings-container {
+ 
+    width: 300px;
+    .image-container {
+      min-width: 0px;
+    min-height: 0px;
+    width: 150px;
+    height: 150px;
+      img{
+        height: 140px;
+      }
+    }
+    .greetings {
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+}

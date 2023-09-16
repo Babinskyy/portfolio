@@ -1,4 +1,5 @@
 import websites from "../../common/data/websites";
+import mockup from "../../common/images/others/mockup-removebg.png"
 
 type ProjectsProps = {
   darkTheme: boolean;
@@ -6,25 +7,20 @@ type ProjectsProps = {
 const Projects = (props: ProjectsProps): JSX.Element => {
   return (
     <div className="portfolio">
+      <h3>MY PROJECTS</h3>
       {websites.map((e, i) => {
         return (
           <div className="website-container">
-            <div className={`website-preview ${props.darkTheme && "dark"}`}>
-              <img
-                src={props.darkTheme ? e.preview.dark : e.preview.light}
-                alt=""
-              />
-            </div>
-            <a
-              href={e.url}
-              target="_blank"
-              style={{ backgroundColor: e.color }}
-            >
-              <img
-                src={props.darkTheme ? e.logo.dark : e.logo.light}
-                alt=""
-                style={{ width: e.width }}
-              />
+            <a href={e.url} target="blank">
+              <div className={`website-preview ${props.darkTheme && "dark"}`}>
+                <img
+                  src={props.darkTheme ? e.preview.dark : e.preview.light}
+                  alt=""
+                />
+              </div>
+            </a>
+            <a href={e.url} target="_blank" className="logo-container">
+              <img src={e.logo} alt="logo" />
             </a>
           </div>
         );

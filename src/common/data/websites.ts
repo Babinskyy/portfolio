@@ -1,36 +1,34 @@
 import marketLight from "../images/websites/marketplace-light.png";
 import marketDark from "../images/websites/marketplace-dark.png";
-import marketLogoLight from "../images/websites/marketplacelogo4.png";
-import marketLogoDark from "../images/websites/marketplacelogo3.png";
+import marketLogo from "../images/websites/marketplacesmalllogo.png";
 
 import podolog from "../images/websites/podolog.png";
-import podologLogo from "../images/websites/podolog-logo.png"
+import podologLogo from "../images/websites/podolog-logo.png";
 
-import analyticsLight from "../images/websites/analytics-light.png"
-import analyticsDark from "../images/websites/analytics-dark.png"
-import chart from "../images/websites/pie-chart.png"
+import analyticsLight from "../images/websites/analytics-light.png";
+import analyticsDark from "../images/websites/analytics-dark.png";
+import chart from "../images/websites/pie-chart.png";
 
-import driverappLight from "../images/websites/driverapp-light.png"
-import driverappDark from "../images/websites/driverapp-dark.png"
+import driverappLight from "../images/websites/driverapp-light.png";
+import driverappDark from "../images/websites/driverapp-dark.png";
+import delivery from "../images/websites/delivery.png"
 
 type Website = {
   name: string;
   url: string;
   technologies: string[];
   preview: { light: string; dark: string };
-  logo: {light: string, dark: string};
-  width: string;
-    color: string;
+  logo: string;
+  color: string;
 };
 
 const websites: Website[] = [
   {
     name: "Market Place",
-    url: "https://marketplace.babinsky.pl/",
+    url: "https://marketplace.yan.software/auth",
     technologies: ["js", "ts", "react", "postgres", "node", "express"],
     preview: { light: marketLight, dark: marketDark },
-    logo: {light: marketLogoLight, dark: marketLogoDark},
-    width: "250px",
+    logo: marketLogo,
     color: "#3586ff",
   },
   {
@@ -38,8 +36,7 @@ const websites: Website[] = [
     url: "https://podologsopot.pl/",
     technologies: ["js", "ts", "react", "postgres", "node", "express"],
     preview: { light: podolog, dark: podolog },
-    logo: {light: podologLogo, dark: podologLogo},
-    width: "100px",
+    logo: podologLogo,
     color: "transparent",
   },
   {
@@ -47,8 +44,7 @@ const websites: Website[] = [
     url: "https://analytics.babinsky.pl/",
     technologies: ["js", "ts", "react", "postgres", "node", "express"],
     preview: { light: analyticsLight, dark: analyticsDark },
-    logo: {light: chart, dark: chart},
-    width: "100px",
+    logo: chart,
     color: "transparent",
   },
   {
@@ -56,8 +52,7 @@ const websites: Website[] = [
     url: "https://driverapp.babinsky.pl/",
     technologies: ["js", "ts", "react", "postgres", "node", "express"],
     preview: { light: driverappLight, dark: driverappDark },
-    logo: {light: chart, dark: chart},
-    width: "100px",
+    logo: delivery,
     color: "transparent",
   },
 ];

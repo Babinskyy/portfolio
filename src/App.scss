@@ -5,10 +5,15 @@
 @import "./styles/scss/partials/footer";
 @import "./styles/scss/partials/home";
 
+@import "./styles/scss/partials/skills";
+@import "./styles/scss/partials/greetings";
+@import "./styles/scss/partials/projects";
+
 .App {
   min-height: 100vh;
   background-color: $primary-color;
   color: $contrast-color;
+  
 
   &.dark {
     background-color: $primary-color-dark;

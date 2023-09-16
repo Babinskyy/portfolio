@@ -1,0 +1,82 @@
+.skills-paragraph {
+  width: 100%;
+  background-color: $secondary-color;
+  padding-bottom: 25px;
+  @include flexbox(column, initial, center);
+
+  &.dark{
+    background-color: $secondary-color-dark;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .skills-container {
+    @include flexbox(row, space-between, center);
+    flex-wrap: wrap;
+    width: 900px;
+    .skill {
+      @include flexbox(column, center);
+      margin: 20px;
+
+      img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+      span {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .skills-paragraph {
+    .skills-container {
+      width: 600px;
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .skills-paragraph {
+    .skills-container {
+      width: 600px;
+    }
+  }
+}
+@media screen and (max-width: 620px) {
+  .skills-paragraph {
+    .skills-container {
+      width: 500px;
+    }
+  }
+}
+@media screen and (max-width: 520px) {
+  .skills-paragraph {
+    .skills-container {
+      @include flexbox(initial, flex-start);
+      width: 450px;
+      flex-wrap: nowrap;
+      overflow: auto;
+    }
+  }
+}
+@media screen and (max-width: 470px) {
+  .skills-paragraph {
+    .skills-container {
+
+      width: 400px;
+
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .skills-paragraph {
+    .skills-container {
+
+      width: 350px;
+
+    }
+  }
+}
+

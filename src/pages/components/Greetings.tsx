@@ -10,7 +10,7 @@ const Greetings = (props:GreetingsProps):JSX.Element => {
       <img src={pic} alt="" />
     </div>
     <h1 className="greetings">Hello, I'm Jan.</h1>
-    <div className="filler"></div>
+    {/* <div className="filler"></div> */}
   </div>)
 }
 

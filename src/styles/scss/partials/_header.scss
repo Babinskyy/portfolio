@@ -2,13 +2,16 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 20px 0px 20px 0px;
   // background-color: $secondary-color;
+  width: 100%;
+  background-color: $secondary-color;
+  &.dark {
+    background-color: $secondary-color-dark;
+  }
   .header-container {
     @include flexbox(row, space-between);
     width: 80%;
     margin: 0 auto;
-    &.dark {
-      background-color: $secondary-color-dark;
-    }
+   
     .logo-container{
       @include flexbox(row, space-between, center);
       width: 240px;
