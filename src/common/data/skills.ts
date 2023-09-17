@@ -58,7 +58,7 @@ const skills: Skill[] = [
     image: azure,
   },
   {
-    name: "Mui",
+    name: "Material UI",
     image: mui,
   },
   {

@@ -11,11 +11,11 @@
     @include flexbox(row, space-between);
     width: 80%;
     margin: 0 auto;
-   
-    .logo-container{
+    .logo-container {
       @include flexbox(row, space-between, center);
       width: 240px;
-      .icon{
+
+      .icon {
         width: 40px;
       }
       .logo {
@@ -23,7 +23,7 @@
         font-weight: 700;
       }
     }
-   
+
     .toggle-switch {
       @include flexbox(row, center, center);
       position: relative;

@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
-import './App.scss';
-import Header from './common/components/Header';
-import Home from './pages/Home';
-import Footer from './common/components/Footer';
+import React, { useEffect, useState } from "react";
+import logo from "./logo.svg";
+import "./App.scss";
+import Header from "./common/components/Header";
+import Home from "./pages/home/Home";
+import Footer from "./common/components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Website from "./pages/website/Website";
 
 function App() {
   const [darkTheme, setDarkTheme] = useState<boolean>(true);
@@ -15,10 +17,19 @@ function App() {
     }
   }, []);
   return (
-    <div className={`App ${darkTheme && ' dark'}`}>
-     <Header setDarkTheme={setDarkTheme} darkTheme={darkTheme}/>
-     <Home darkTheme={darkTheme}/>
-     <Footer darkTheme={darkTheme}/>
+    <div className={`App ${darkTheme && " dark"}`}>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={<Home darkTheme={darkTheme} setDarkTheme={setDarkTheme} />}
+          />
+          <Route
+            path="/website/:id"
+            element={<Website darkTheme={darkTheme} setDarkTheme={setDarkTheme} />}
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

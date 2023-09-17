@@ -1,4 +1,4 @@
-import pic from "../../common/images/others/papugapic2.png";
+import pic from "../../../common/images/others/papugapic2.png";
 
 type GreetingsProps = {
     darkTheme: boolean;

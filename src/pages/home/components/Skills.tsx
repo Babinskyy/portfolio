@@ -1,4 +1,4 @@
-import skills from "../../common/data/skills";
+import skills from "../../../common/data/skills";
 
 type SkillsProps = {
   darkTheme: boolean;

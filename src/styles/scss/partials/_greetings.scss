@@ -1,6 +1,6 @@
 .greetings-container {
   @include flexbox(column, initial, center);
-  margin: 40px 0px 0px 0px;
+  margin: 53.6px 0px 0px 0px;
   width: 100%;
   .image-container {
     @include flexbox(initial, center, flex-end);

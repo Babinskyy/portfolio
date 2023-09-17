@@ -1,4 +1,5 @@
-import pcicon from "../images/others/pcicon.png"
+import pcicon from "../images/others/pcicon.png";
+import { Link } from "react-router-dom";
 
 type HeaderProps = {
   darkTheme: boolean;
@@ -15,10 +16,18 @@ const Header = (props: HeaderProps): JSX.Element => {
   return (
     <header className={`header ${props.darkTheme && "dark"}`}>
       <div className="header-container">
-        <div className="logo-container">
-        <img src={pcicon} alt="icon" className="icon"/>
-        <div className="logo">Yan Software</div>
-        </div>
+        <Link
+          to="/"
+          style={{
+            textDecoration: "none",
+            color: `${props.darkTheme ? "#dfdfdf" : "#2b2b2b"}`,
+          }}
+        >
+          <div className="logo-container">
+            <img src={pcicon} alt="icon" className="icon" />
+            <div className="logo">Yan Software</div>
+          </div>
+        </Link>
         <div className="toggle-switch">
           <label className={`${props.darkTheme && "dark"}`}>
             <input
