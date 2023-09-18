@@ -11,7 +11,7 @@ const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
   
 
   return (
-    <div className="WebsitePreview">
+  <div className="WebsitePreview">
       <h1>{props.website?.name}</h1>
       <div className="preview">
         <div className="website-container">

@@ -11,6 +11,7 @@
 @import "./styles/scss/partials/projects";
 
 .App {
+  @include flexbox(column, space-between);
   min-height: 100vh;
   background-color: $primary-color;
   color: $contrast-color;

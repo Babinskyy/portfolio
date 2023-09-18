@@ -19,6 +19,7 @@ function App() {
   return (
     <div className={`App ${darkTheme && " dark"}`}>
       <BrowserRouter>
+        <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
         <Routes>
           <Route
             path="/"
@@ -26,9 +27,12 @@ function App() {
           />
           <Route
             path="/website/:id"
-            element={<Website darkTheme={darkTheme} setDarkTheme={setDarkTheme} />}
+            element={
+              <Website darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
+            }
           />
         </Routes>
+        <Footer darkTheme={darkTheme} />
       </BrowserRouter>
     </div>
   );

@@ -7,9 +7,15 @@ type WebsiteDescriptionProps = {
 const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
   return (
     <div className="WebsiteDescription">
+      {props.website?.importantMessage && (
+        <p className="important">{props.website?.importantMessage}</p>
+      )}
+
       <p className="description">{props.website?.description}</p>
-      <a href={props.website?.url}>
-        <button className="visit">Visit {props.website?.name}</button>
+      <a href={props.website?.url} target="blank">
+        <button className={`visit ${props.darkTheme && "dark"}`}>
+          Visit {props.website?.name}
+        </button>
       </a>
     </div>
   );

@@ -8,6 +8,7 @@ const Skills = (props: SkillsProps): JSX.Element => {
   return (
     <div className={`skills-paragraph ${props.darkTheme && "dark"}`}>
       <h3>MY SKILLS</h3>
+      
       <div className="skills-container">
         {skills.map((e, i) => {
           return (
