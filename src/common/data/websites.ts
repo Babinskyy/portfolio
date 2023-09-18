@@ -65,7 +65,7 @@ const websites: WebsiteType[] = [
     logo: chart,
     importantMessage: "",
     description:
-      "Analytics platform is a product designed for office workers. It helped them manage information about drivers and routes all in one place. My job was to listen to what the clients needed and make sure those needs were part of the product. I also focused on making the screens and buttons easy for people to use. One of the cool things about this product is that it showed important data in graphs and bars, which made it easy for users to understand how their company was doing. This project shows my commitment to making products that meet customer needs and are easy to use, while also being visually appealing and helpful for businesses.",
+      "Analytics platform is a product designed for office workers. It helped them manage information about drivers and routes all in one place. My job was to listen to what the clients needed and make sure those needs were part of the product. I also focused on making the screens and buttons easy for people to use. This tool showed important data in graphs and bars, which made it easy for users to understand how their company was doing. This project shows my commitment to making products that meet customer needs and are easy to use, while also being visually appealing and helpful for businesses.",
   },
   {
     id: 4,
