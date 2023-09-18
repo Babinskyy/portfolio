@@ -1,5 +1,5 @@
 import websites from "../../../common/data/websites";
-import githublogo from "../../../common/images/websites/github.png";
+
 
 type ProjectsProps = {
   darkTheme: boolean;
@@ -18,12 +18,7 @@ const Projects = (props: ProjectsProps): JSX.Element => {
           </a>
         );
       })}
-      <a href="https://github.com/Babinskyy" target="blank">
-        <button className={`${props.darkTheme && "dark"}`}>
-          <span>Github</span>
-          <img src={githublogo} alt="" />
-        </button>
-      </a>
+      
     </div>
   );
 };
