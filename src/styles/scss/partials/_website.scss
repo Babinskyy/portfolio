@@ -41,6 +41,7 @@
             }
           }
         }
+
         .mobile-container {
           @include flexbox(column, center, center);
 
@@ -71,6 +72,72 @@
             img {
               width: 100px;
               border-radius: 10px;
+            }
+          }
+        }
+      }
+      @media screen and (min-width: 1600px) {
+        .preview {
+          .website-container {
+            a {
+              .website-preview {
+                img {
+                  height: 450px;
+                }
+              }
+            }
+          }
+          .mobile-container {
+            a {
+              .mobile-preview {
+                img {
+                  height: 450px;
+                }
+              }
+            }
+          }
+        }
+      }
+      @media screen and (min-width: 2100px) {
+        .preview {
+          .website-container {
+            a {
+              .website-preview {
+                img {
+                  height: 500px;
+                }
+              }
+            }
+          }
+          .mobile-container {
+            a {
+              .mobile-preview {
+                img {
+                  height: 500px;
+                }
+              }
+            }
+          }
+        }
+      }
+      @media screen and (min-width: 2400px) {
+        .preview {
+          .website-container {
+            a {
+              .website-preview {
+                img {
+                  height: 700px;
+                }
+              }
+            }
+          }
+          .mobile-container {
+            a {
+              .mobile-preview {
+                img {
+                  height: 700px;
+                }
+              }
             }
           }
         }
@@ -189,6 +256,24 @@
           color: $primary-color;
           cursor: pointer;
         }
+      }
+    }
+    @media (min-width: 1600px) {
+      .description {
+        font-size: 35px;
+        width: 1200px;
+      }
+    }
+    @media (min-width: 2100px) {
+      .description {
+        font-size: 35px;
+        width: 1350px;
+      }
+    }
+    @media (min-width: 2400px) {
+      .description {
+        font-size: 45px;
+        width: 1800px;
       }
     }
     @media screen and (max-width: 880px) {
