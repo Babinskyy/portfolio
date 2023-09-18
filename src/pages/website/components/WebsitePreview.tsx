@@ -6,12 +6,8 @@ type WebsitePreviewProps = {
 };
 
 const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
-
-
-  
-
   return (
-  <div className="WebsitePreview">
+    <div className="WebsitePreview">
       <h1>{props.website?.name}</h1>
       <div className="preview">
         <div className="website-container">
@@ -27,7 +23,11 @@ const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
               />
             </div>
           </a>
-          <a href={props.website?.url} target="_blank" className="logo-container">
+          <a
+            href={props.website?.url}
+            target="_blank"
+            className="logo-container"
+          >
             <img src={props.website?.logo} alt="logo" />
           </a>
         </div>
@@ -44,7 +44,11 @@ const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
               />
             </div>
           </a>
-          <a href={props.website?.url} target="_blank" className="logo-container">
+          <a
+            href={props.website?.url}
+            target="_blank"
+            className="logo-container"
+          >
             <img src={props.website?.logo} alt="logo" />
           </a>
         </div>

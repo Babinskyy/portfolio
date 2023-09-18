@@ -75,43 +75,153 @@
           }
         }
       }
-    }
-    .WebsiteDescription {
-      @include flexbox(column, center, center);
-
-      .important {
-        font-weight: 600;
-        font-size: 30px;
-        border: 2px solid rgb(146, 146, 146);
-        padding: 20px;
-        border-radius: 10px;
-      }
-      .description {
-        text-align: left;
-        width: 860px;
-        font-size: 20px;
-      }
-      a {
-        button {
-          font-size: 20px;
-          height: 40px;
-          padding: 0px 20px 0px 20px;
-          border-radius: 10px;
-          border: none;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          transition: 0.2s;
-          // background-color: $secondary-color;
-          &.dark {
-            background-color: $secondary-color-dark;
-            color: $contrast-color-dark;
-            box-shadow: rgba(0, 0, 0, 0.34) 0px 5px 8px;
+      @media screen and (max-width: 880px) {
+        .preview {
+          .website-container {
+            a {
+              .website-preview {
+                img {
+                  height: 250px;
+                }
+              }
+            }
           }
-          &:hover {
-            background-color: $contrast-color;
-            color: $primary-color;
-            cursor: pointer;
+          .mobile-container {
+            a {
+              .mobile-preview {
+                img {
+                  height: 250px;
+                }
+              }
+            }
           }
         }
+      }
+      @media screen and (max-width: 740px) {
+        .preview {
+          .website-container {
+            a {
+              .website-preview {
+                img {
+                  height: 200px;
+                }
+              }
+            }
+            a.logo-container {
+              display: none;
+            }
+          }
+          .mobile-container {
+            a {
+              .mobile-preview {
+                img {
+                  height: 200px;
+                }
+              }
+            }
+            a.logo-container {
+              display: none;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 610px) {
+        .preview {
+          .website-container {
+            a {
+              .website-preview {
+                img {
+                  height: 150px;
+                }
+              }
+            }
+          }
+          .mobile-container {
+            a {
+              .mobile-preview {
+                img {
+                  height: 150px;
+                }
+              }
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .preview {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .WebsiteDescription {
+    @include flexbox(column, center, center);
+    .important {
+      font-weight: 600;
+      font-size: 30px;
+      border: 2px solid rgb(146, 146, 146);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .description {
+      text-align: left;
+      width: 860px;
+      font-size: 20px;
+    }
+    a {
+      button {
+        font-size: 20px;
+        height: 40px;
+        padding: 0px 20px 0px 20px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: 0.2s;
+        // background-color: $secondary-color;
+        &.dark {
+          background-color: $secondary-color-dark;
+          color: $contrast-color-dark;
+          box-shadow: rgba(0, 0, 0, 0.34) 0px 5px 8px;
+        }
+        &:hover {
+          background-color: $contrast-color;
+          color: $primary-color;
+          cursor: pointer;
+        }
+      }
+    }
+    @media screen and (max-width: 880px) {
+      .important {
+        font-size: 25px;
+        padding: 10px;
+      }
+      .description {
+        width: 700px;
+      }
+    }
+    @media screen and (max-width: 740px) {
+      .description {
+        font-size: 17px;
+        width: 590px;
+      }
+    }
+    @media screen and (max-width: 610px) {
+      .description {
+        font-size: 17px;
+        width: 450px;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .description {
+        font-size: 17px;
+        width: 400px;
+      }
+    }
+    @media screen and (max-width: 420px) {
+      .description {
+        font-size: 17px;
+        width: 300px;
       }
     }
   }
