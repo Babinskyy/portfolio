@@ -1,6 +1,6 @@
 .header {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 20px 0px 20px 0px;
+  padding: 18px 0px 18px 0px;
   // background-color: $secondary-color;
   width: 100%;
   background-color: $secondary-color;
@@ -9,8 +9,10 @@
   }
   .header-container {
     @include flexbox(row, space-between);
-    width: 80%;
+    width: 1000px;
     margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+    // background-color: antiquewhite;
     .logo-container {
       @include flexbox(row, space-between, center);
       width: 240px;
@@ -23,62 +25,115 @@
         font-weight: 700;
       }
     }
-
-    .toggle-switch {
-      @include flexbox(row, center, center);
-      position: relative;
-      width: 50px;
-      transition: 0.2s;
-
-      &:hover {
-        transform: scale(1.2);
+    .icons-toggle-container {
+      width: 200px;
+      @include flexbox(row, space-between);
+      a {
+        width: 40px;
+        background-color: transparent;
+        border: none;
+        img {
+          height: 40px;
+        }
+        &:hover {
+          cursor: pointer;
+          opacity: 0.6;
+        }
       }
-      label {
-        position: absolute;
-        width: 100%;
-        height: 25px;
-        background-color: #fff;
-        border-radius: 50px;
-        &.dark {
-          background-color: #616161;
-        }
-        cursor: pointer;
-        input {
-          position: absolute;
-          display: none;
-        }
 
-        .slider-toggle {
+      .toggle-switch {
+        @include flexbox(row, center, center);
+        position: relative;
+        width: 50px;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+        label {
           position: absolute;
           width: 100%;
-          height: 100%;
-          border-radius: 50px;
-          transition: 0.3s;
-        }
-
-        input:checked ~ .slider-toggle {
+          height: 25px;
           background-color: #fff;
-        }
+          border-radius: 50px;
+          &.dark {
+            background-color: #616161;
+          }
+          cursor: pointer;
+          input {
+            position: absolute;
+            display: none;
+          }
 
-        .slider-toggle::before {
-          content: "";
-          position: absolute;
-          top: 5px;
-          left: 7px;
-          width: 15px;
-          height: 15px;
-          border-radius: 50%;
-          box-shadow: inset 5px -2px 0px 0px #fff;
-          background-color: #616161;
-          transition: 0.3s;
-        }
+          .slider-toggle {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            transition: 0.3s;
+          }
 
-        input:checked ~ .slider-toggle::before {
-          transform: translateX(23px);
-          background-color: #616161;
-          box-shadow: none;
+          input:checked ~ .slider-toggle {
+            background-color: #fff;
+          }
+
+          .slider-toggle::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 7px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            box-shadow: inset 5px -2px 0px 0px #fff;
+            background-color: #616161;
+            transition: 0.3s;
+          }
+
+          input:checked ~ .slider-toggle::before {
+            transform: translateX(23px);
+            background-color: #616161;
+            box-shadow: none;
+          }
         }
       }
+    }
+  }
+  @media screen and (max-width: 1040px) {
+    .header-container {
+      width: 800px;
+    }
+  }
+  @media screen and (max-width: 840px) {
+    .header-container {
+      width: 700px;
+    }
+  }
+  @media screen and (max-width: 740px) {
+    .header-container {
+      width: 500px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .header-container {
+      width: 450px;
+    }
+  }
+  @media screen and (max-width: 490px) {
+    .header-container {
+      width: 400px;
+      .logo-container {
+        width: 50px;
+                .logo {
+               display: none;
+                }
+              }
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .header-container {
+      width: 300px;
+
     }
   }
 }

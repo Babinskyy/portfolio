@@ -33,7 +33,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1040px) {
   .skills-paragraph {
     .skills-container {
       width: 800px;
@@ -45,21 +45,21 @@
     }
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
   .skills-paragraph {
     .skills-container {
       width: 700px;
     }
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 740px) {
   .skills-paragraph {
     .skills-container {
       width: 500px;
     }
   }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 550px) {
   .skills-paragraph {
     .skills-container {
       @include flexbox(initial, flex-start);
@@ -69,14 +69,14 @@
     }
   }
 }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 490px) {
   .skills-paragraph {
     .skills-container {
       width: 400px;
     }
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .skills-paragraph {
     .skills-container {
       width: 350px;

@@ -21,6 +21,25 @@
   .greetings {
     font-size: 80px;
     font-weight: 600;
+    // margin-bottom: 0;
+  }
+  .icons-panel {
+    @include flexbox(row, space-between);
+    text-align: center;
+    width: 150px;
+    margin-bottom: 10px;
+    a {
+      width: 50px;
+      background-color: transparent;
+      border: none;
+
+      img {
+        height: 50px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
 @media screen and (max-width: 520px) {
