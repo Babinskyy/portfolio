@@ -216,7 +216,16 @@
       }
       @media screen and (max-width: 500px) {
         .preview {
-          display: none;
+          .website-container {
+            margin: 0;
+          }
+          .mobile-container {
+            a {
+              .mobile-preview {
+                display: none;
+              }
+            }
+          }
         }
       }
     }
@@ -227,9 +236,10 @@
     .important {
       font-weight: 600;
       font-size: 30px;
-      border: 2px solid rgb(146, 146, 146);
+      // border: 2px solid rgb(146, 146, 146);
       padding: 20px;
       border-radius: 10px;
+      text-align: center;
     }
     .description {
       text-align: left;
@@ -237,9 +247,9 @@
       font-size: 20px;
     }
     a {
-      @include aButton($secondary-color, 20px, 250px);
+      @include aButton(#eee, 20px, 250px);
       &.dark {
-        background-color: $secondary-color-dark;
+        background-color: #575757;
       }
     }
     @media (min-width: 1600px) {
