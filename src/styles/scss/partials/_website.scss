@@ -299,7 +299,7 @@
       .buttons-panel{
         width: 460px;
         a{
-          width: 200px;
+          width: 225px;
         }
       }
     }
@@ -311,7 +311,7 @@
       .buttons-panel{
         width: 400px;
         a{
-          width: 150px;
+          width: 190px;
           font-size: 15px;
         }
       }
@@ -325,7 +325,11 @@
         width: 305px;
         a{
           width: 140px;
-          font-size: 14px;
+          font-size: 11px;
+          height: 35px;
+          img{
+            margin-left: 5px;
+          }
         }
       }
     }
