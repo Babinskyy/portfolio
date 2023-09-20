@@ -1,5 +1,6 @@
 import linkedin from "../images/others/linkedin.png";
 import githublogo from "../../common/images/websites/github.png";
+import { Link } from "react-router-dom";
 type HeaderProps = {
   darkTheme: boolean;
 };
@@ -7,35 +8,18 @@ type HeaderProps = {
 const Footer = (props: HeaderProps): JSX.Element => {
   return (
     <footer className={`footer ${props.darkTheme ? "dark" : ""}`}>
-      {/* <a href="https://www.linkedin.com/in/jan-babi%C5%84ski-880469229/" target="_blank">
-        <img src={linkedin} alt="linkedin-icon" />
-      </a> */}
-      <a
-        href="https://github.com/Babinskyy"
-        target="_blank"
-        className={`${props.darkTheme ? "dark" : ""}`}
-      >
-        <span>Github</span>
-        <img src={githublogo} alt="" />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/jan-babi%C5%84ski-880469229/"
-        target="_blank"
-        className={`${props.darkTheme ? "dark" : ""}`}
-      >
-        <span>LinkedIn</span>
-        <img src={linkedin} alt="icon" />
-      </a>
-
-      {/* <p>
-        Contact me via{" "}
-        <a
-          href="mailto:jan@babinsky.pl"
-          className={`${props.darkTheme ? "dark" : ""}`}
+      <div className="icons-panel">
+        <Link to="https://github.com/Babinskyy" target="_blank">
+          <img src={githublogo} alt="" />
+        </Link>
+        <Link
+          to="https://www.linkedin.com/in/jan-babi%C5%84ski-880469229/"
+          target="_blank"
         >
-          jan@babinsky.pl
-        </a>
-      </p> */}
+          <img src={linkedin} alt="icon" />
+        </Link>
+      </div>
+      <p className="copyright">&copy;2023 Jan Babinski | All Rights Reserved</p>
     </footer>
   );
 };
