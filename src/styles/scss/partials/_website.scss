@@ -246,12 +246,18 @@
       width: 860px;
       font-size: 20px;
     }
-    a {
-      @include aButton(#eee, 20px, 250px);
-      &.dark {
-        background-color: #575757;
+    .buttons-panel{
+      @include flexbox(row, space-between);
+      width: 600px;
+      a {
+        @include aButton(#eee, 20px, 250px);
+        // margin-left: 20px;
+        &.dark {
+          background-color: #575757;
+        }
       }
     }
+   
     @media (min-width: 1600px) {
       .description {
         font-size: 35px;
@@ -290,17 +296,37 @@
         font-size: 17px;
         width: 450px;
       }
+      .buttons-panel{
+        width: 460px;
+        a{
+          width: 200px;
+        }
+      }
     }
     @media screen and (max-width: 500px) {
       .description {
         font-size: 17px;
         width: 400px;
       }
+      .buttons-panel{
+        width: 400px;
+        a{
+          width: 150px;
+          font-size: 15px;
+        }
+      }
     }
     @media screen and (max-width: 420px) {
       .description {
         font-size: 17px;
         width: 300px;
+      }
+      .buttons-panel{
+        width: 305px;
+        a{
+          width: 140px;
+          font-size: 14px;
+        }
       }
     }
   }

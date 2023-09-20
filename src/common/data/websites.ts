@@ -22,6 +22,7 @@ export type WebsiteType = {
   id: number;
   name: string;
   url: string;
+  github: string;
   technologies: string[];
   preview: { light: string; dark: string };
   mobile: { light: string; dark: string };
@@ -35,6 +36,7 @@ const websites: WebsiteType[] = [
     id: 1,
     name: "Market Place",
     url: "https://marketplace.yan.software/auth",
+    github: "https://github.com/Babinskyy/marketplace",
     technologies: ["js", "ts", "react", "postgres", "node", "express"],
     preview: { light: marketLight, dark: marketDark },
     mobile: { light: marketMobileLight, dark: marketMobileDark },
@@ -47,6 +49,7 @@ const websites: WebsiteType[] = [
     id: 2,
     name: "Podolog Sopot",
     url: "https://podologsopot.pl/",
+    github: "https://github.com/Babinskyy/podolog",
     technologies: ["js", "ts", "react", "postgres", "node", "express"],
     preview: { light: podolog, dark: podolog },
     mobile: { light: podologMobile, dark: podologMobile },
@@ -59,6 +62,7 @@ const websites: WebsiteType[] = [
     id: 3,
     name: "Analytics",
     url: "https://analytics.babinsky.pl/",
+    github: "https://github.com/Babinskyy/BroccoliBoss",
     technologies: ["js", "ts", "react", "postgres", "node", "express"],
     preview: { light: analyticsLight, dark: analyticsDark },
     mobile: { light: analyticsMobileLight, dark: analyticsMobileDark },
@@ -71,6 +75,7 @@ const websites: WebsiteType[] = [
     id: 4,
     name: "Driver App",
     url: "https://driverapp.babinsky.pl/",
+    github: "https://github.com/Babinskyy/DriverMobileApp",
     technologies: ["js", "ts", "react", "postgres", "node", "express"],
     preview: { light: driverappLight, dark: driverappDark },
     mobile: { light: driverappDark, dark: driverappLight },

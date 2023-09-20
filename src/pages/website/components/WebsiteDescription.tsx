@@ -1,4 +1,5 @@
 import { WebsiteType } from "../../../common/data/websites";
+import github from "../../../common/images/websites/github.png"
 
 type WebsiteDescriptionProps = {
   darkTheme: boolean;
@@ -12,14 +13,24 @@ const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
       )}
 
       <p className="description">{props.website?.description}</p>
-      <a
-        href={props.website?.url}
-        target="_blank"
-        className={`visit ${props.darkTheme ? "dark" : ""}`}
-      >
-        Visit {props.website?.name}
-        <img src={props.website?.logo} alt="icon" />
-      </a>
+      <div className="buttons-panel">
+        <a
+          href={props.website?.url}
+          target="_blank"
+          className={`visit ${props.darkTheme ? "dark" : ""}`}
+        >
+          Visit {props.website?.name}
+          <img src={props.website?.logo} alt="icon" />
+        </a>
+        <a
+          href={props.website?.github}
+          target="_blank"
+          className={`visit ${props.darkTheme ? "dark" : ""}`}
+        >
+          Visit in GitHub
+          <img src={github} alt="icon" />
+        </a>
+      </div>
     </div>
   );
 };
