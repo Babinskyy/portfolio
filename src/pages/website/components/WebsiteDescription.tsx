@@ -27,7 +27,7 @@ const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
           target="_blank"
           className={`visit ${props.darkTheme ? "dark" : ""}`}
         >
-          Visit in GitHub
+          Visit on GitHub
           <img src={github} alt="icon" />
         </a>
       </div>
