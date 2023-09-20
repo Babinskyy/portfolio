@@ -10,20 +10,21 @@ const Footer = (props: HeaderProps): JSX.Element => {
       {/* <a href="https://www.linkedin.com/in/jan-babi%C5%84ski-880469229/" target="_blank">
         <img src={linkedin} alt="linkedin-icon" />
       </a> */}
-      <a href="https://github.com/Babinskyy" target="_blank">
-        <button className={`${props.darkTheme && "dark"}`}>
-          <span>Github</span>
-          <img src={githublogo} alt="" />
-        </button>
+      <a
+        href="https://github.com/Babinskyy"
+        target="_blank"
+        className={`${props.darkTheme && "dark"}`}
+      >
+        <span>Github</span>
+        <img src={githublogo} alt="" />
       </a>
       <a
         href="https://www.linkedin.com/in/jan-babi%C5%84ski-880469229/"
         target="_blank"
+        className={`${props.darkTheme && "dark"}`}
       >
-        <button className={`${props.darkTheme && "dark"}`}>
-          <span>LinkedIn</span>
-          <img src={linkedin} alt="" />
-        </button>
+        <span>LinkedIn</span>
+        <img src={linkedin} alt="" />
       </a>
 
       {/* <p>
