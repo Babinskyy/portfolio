@@ -237,27 +237,8 @@
       font-size: 20px;
     }
     a {
-      button {
-        font-size: 20px;
-        height: 40px;
-        padding: 0px 20px 0px 20px;
-        border-radius: 10px;
-        border: none;
-        // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        border: 1px solid rgb(161, 161, 161);
-        transition: 0.2s;
-        // background-color: $secondary-color;
-        &.dark {
-          background-color: $secondary-color-dark;
-          color: $contrast-color-dark;
-          box-shadow: rgba(0, 0, 0, 0.34) 0px 5px 8px;
-        }
-        &:hover {
-          background-color: $contrast-color;
-          color: $primary-color;
-          cursor: pointer;
-        }
-      }
+      @include aButton($secondary-color);
+
     }
     @media (min-width: 1600px) {
       .description {

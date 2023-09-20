@@ -1,15 +1,50 @@
 @mixin flexbox($direction: row, $justify: flex-start, $align: normal) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin aButton(
+  $background-color: $primary-color,
+  $font-size: 20px,
+  $width: 200px,
+  $height: 50px,
+  $margin-bottom: 0
+  
+) {
+  @include flexbox(initial, center, center);
+
+  font-size: $font-size;
+  width: $width;
+  height: $height;
+  margin-bottom: $margin-bottom;
+  background-color: $background-color;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid rgb(161, 161, 161);
+  color: $contrast-color;
+  transition: 0.2s;
+  &.dark {
+    background-color: $primary-color-dark;
+    color: $contrast-color-dark;
+    border: 1px solid rgb(49, 49, 49);
+  }
+  &:hover {
+    background-color: $contrast-color;
+    cursor: pointer;
+    color: $primary-color;
+  }
+  img {
+    margin-left: 10px;
+    height: 35px;
+  }
 }
 @mixin random-color($selector) {
-    #{$selector}: unquote("rgba(#{random(255)}, #{random(255)}, #{random(255)})");
-  }
+  #{$selector}: unquote("rgba(#{random(255)}, #{random(255)}, #{random(255)})");
+}
 
-  @for $i from 1 to 20 {
-    .bgc-#{$i} {
-      @include random-color('background-color');
-    }
+@for $i from 1 to 20 {
+  .bgc-#{$i} {
+    @include random-color("background-color");
   }
+}
