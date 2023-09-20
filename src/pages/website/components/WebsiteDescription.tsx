@@ -18,6 +18,7 @@ const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
         className={`visit ${props.darkTheme ? "dark" : ""}`}
       >
         Visit {props.website?.name}
+        <img src={props.website?.logo} alt="icon" />
       </a>
     </div>
   );

@@ -10,7 +10,6 @@
   $width: 200px,
   $height: 50px,
   $margin-bottom: 0
-  
 ) {
   @include flexbox(initial, center, center);
 
@@ -24,19 +23,25 @@
   border: 1px solid rgb(161, 161, 161);
   color: $contrast-color;
   transition: 0.2s;
-  &.dark {
-    background-color: $primary-color-dark;
-    color: $contrast-color-dark;
-    border: 1px solid rgb(49, 49, 49);
-  }
+
   &:hover {
     background-color: $contrast-color;
     cursor: pointer;
     color: $primary-color;
   }
+  &.dark {
+    background-color: $primary-color-dark;
+    color: $contrast-color-dark;
+    border: 1px solid rgb(49, 49, 49);
+    &:hover {
+      background-color: $contrast-color-dark;
+      cursor: pointer;
+      color: $primary-color-dark;
+    }
+  }
   img {
-    margin-left: 10px;
-    height: 35px;
+    margin-left: ($font-size/2);
+    height: ($font-size * 1.3);
   }
 }
 @mixin random-color($selector) {

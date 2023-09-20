@@ -237,8 +237,8 @@
       font-size: 20px;
     }
     a {
-      @include aButton($secondary-color);
-      &.dark{
+      @include aButton($secondary-color, 20px, 250px);
+      &.dark {
         background-color: $secondary-color-dark;
       }
     }

@@ -24,7 +24,7 @@ const Footer = (props: HeaderProps): JSX.Element => {
         className={`${props.darkTheme ? "dark" : ""}`}
       >
         <span>LinkedIn</span>
-        <img src={linkedin} alt="" />
+        <img src={linkedin} alt="icon" />
       </a>
 
       {/* <p>
