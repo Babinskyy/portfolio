@@ -11,34 +11,33 @@
   }
   a {
     @include aButton($secondary-color, 40px, 500px, 85px, 25px);
+    &.dark {
+      // @include aButton($primary-color-dark);
+      background-color: $secondary-color-dark;
+    }
   }
 }
 
 @media screen and (max-width: 520px) {
   .projects {
-    a{
-      button{
-        width: 400px;
-        font-size: 35px;
-        img {
-          height: 55px;
-        }
+    a {
+      width: 400px;
+      font-size: 35px;
+      img {
+        height: 55px;
       }
     }
   }
 }
 @media screen and (max-width: 430px) {
   .projects {
-    a{
-      button{
-        width: 300px;
-        font-size: 27px;
-        img {
-          margin-left: 15px;
-          height: 45px;
-        }
+    a {
+      width: 300px;
+      font-size: 27px;
+      img {
+        margin-left: 15px;
+        height: 45px;
       }
     }
   }
 }
-

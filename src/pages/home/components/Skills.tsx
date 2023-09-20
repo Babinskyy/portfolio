@@ -6,13 +6,13 @@ type SkillsProps = {
 
 const Skills = (props: SkillsProps): JSX.Element => {
   return (
-    <div className={`skills-paragraph ${props.darkTheme && "dark"}`}>
+    <div className={`skills-paragraph ${props.darkTheme ? "dark" : ""}`}>
       <h3>MY SKILLS</h3>
       
       <div className="skills-container">
         {skills.map((e, i) => {
           return (
-            <div className="skill">
+            <div className={`skill ${e.name}`}>
               <img src={e.image} alt={e.name + " icon"} />
               <span>{e.name}</span>
             </div>

@@ -15,7 +15,7 @@ const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
       <a
         href={props.website?.url}
         target="_blank"
-        className={`visit ${props.darkTheme && "dark"}`}
+        className={`visit ${props.darkTheme ? "dark" : ""}`}
       >
         Visit {props.website?.name}
       </a>

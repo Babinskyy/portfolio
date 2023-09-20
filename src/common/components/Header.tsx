@@ -14,7 +14,7 @@ const Header = (props: HeaderProps): JSX.Element => {
     console.log(newTheme);
   };
   return (
-    <header className={`header ${props.darkTheme && "dark"}`}>
+    <header className={`header ${props.darkTheme ? "dark" : ""}`}>
       <div className="header-container">
         <Link
           to="/"
@@ -29,7 +29,7 @@ const Header = (props: HeaderProps): JSX.Element => {
           </div>
         </Link>
         <div className="toggle-switch">
-          <label className={`${props.darkTheme && "dark"}`}>
+          <label className={`${props.darkTheme ? "dark" : ""}`}>
             <input
               type="checkbox"
               onChange={handleModeChange}

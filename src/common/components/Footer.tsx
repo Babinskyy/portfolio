@@ -6,14 +6,14 @@ type HeaderProps = {
 
 const Footer = (props: HeaderProps): JSX.Element => {
   return (
-    <footer className={`footer ${props.darkTheme && "dark"}`}>
+    <footer className={`footer ${props.darkTheme ? "dark" : ""}`}>
       {/* <a href="https://www.linkedin.com/in/jan-babi%C5%84ski-880469229/" target="_blank">
         <img src={linkedin} alt="linkedin-icon" />
       </a> */}
       <a
         href="https://github.com/Babinskyy"
         target="_blank"
-        className={`${props.darkTheme && "dark"}`}
+        className={`${props.darkTheme ? "dark" : ""}`}
       >
         <span>Github</span>
         <img src={githublogo} alt="" />
@@ -21,7 +21,7 @@ const Footer = (props: HeaderProps): JSX.Element => {
       <a
         href="https://www.linkedin.com/in/jan-babi%C5%84ski-880469229/"
         target="_blank"
-        className={`${props.darkTheme && "dark"}`}
+        className={`${props.darkTheme ? "dark" : ""}`}
       >
         <span>LinkedIn</span>
         <img src={linkedin} alt="" />
@@ -31,7 +31,7 @@ const Footer = (props: HeaderProps): JSX.Element => {
         Contact me via{" "}
         <a
           href="mailto:jan@babinsky.pl"
-          className={`${props.darkTheme && "dark"}`}
+          className={`${props.darkTheme ? "dark" : ""}`}
         >
           jan@babinsky.pl
         </a>

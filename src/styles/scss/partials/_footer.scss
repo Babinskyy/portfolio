@@ -11,4 +11,10 @@
   a {
     @include aButton($primary-color, 25px);
   }
+  @media screen and (max-width: 420px) {
+    a {
+      width: 150px;
+      font-size: 20px;
+    }
+  }
 }

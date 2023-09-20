@@ -238,7 +238,9 @@
     }
     a {
       @include aButton($secondary-color);
-
+      &.dark{
+        background-color: $secondary-color-dark;
+      }
     }
     @media (min-width: 1600px) {
       .description {

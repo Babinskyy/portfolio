@@ -12,7 +12,7 @@ const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
       <div className="preview">
         <div className="website-container">
           <a href={props.website?.url} target="_blank">
-            <div className={`website-preview ${props.darkTheme && "dark"}`}>
+            <div className={`website-preview ${props.darkTheme ? "dark" : ""}`}>
               <img
                 src={
                   props.darkTheme
@@ -33,7 +33,7 @@ const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
         </div>
         <div className="mobile-container">
           <a href={props.website?.url} target="_blank">
-            <div className={`mobile-preview ${props.darkTheme && "dark"}`}>
+            <div className={`mobile-preview ${props.darkTheme ? "dark" : ""}`}>
               <img
                 src={
                   props.darkTheme

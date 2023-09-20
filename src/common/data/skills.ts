@@ -10,6 +10,9 @@ import heroku from "../images/skills/heroku.png";
 import azure from "../images/skills/azure.png";
 import mui from "../images/skills/mui.png";
 import netlify from "../images/skills/netlify.png";
+import html from "../images/skills/html.png";
+import css from "../images/skills/css.png";
+import scss from "../images/skills/scss.png";
 
 type Skill = {
   name: string;
@@ -30,12 +33,8 @@ const skills: Skill[] = [
     image: react,
   },
   {
-    name: "MongoDB",
-    image: mongo,
-  },
-  {
-    name: "PostgreSQL",
-    image: postgres,
+    name: "Ionic",
+    image: ionic,
   },
   {
     name: "Node",
@@ -46,8 +45,28 @@ const skills: Skill[] = [
     image: express,
   },
   {
-    name: "Ionic",
-    image: ionic,
+    name: "PostgreSQL",
+    image: postgres,
+  },
+  {
+    name: "MongoDB",
+    image: mongo,
+  },
+  {
+    name: "HTML",
+    image: html,
+  },
+  {
+    name: "CSS",
+    image: css,
+  },
+  {
+    name: "Sass",
+    image: scss,
+  },
+  {
+    name: "Material UI",
+    image: mui,
   },
   {
     name: "Heroku",
@@ -56,10 +75,6 @@ const skills: Skill[] = [
   {
     name: "Azure",
     image: azure,
-  },
-  {
-    name: "Material UI",
-    image: mui,
   },
   {
     name: "Netlify",

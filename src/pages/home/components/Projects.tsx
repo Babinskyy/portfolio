@@ -11,7 +11,7 @@ const Projects = (props: ProjectsProps): JSX.Element => {
         return (
           <a
             href={`website/${e.id}`}
-            className={`${props.darkTheme && "dark"}`}
+            className={`${props.darkTheme ? "dark" : ""}`}
           >
             <span>{e.name}</span>
             <img src={e.logo} alt="" />

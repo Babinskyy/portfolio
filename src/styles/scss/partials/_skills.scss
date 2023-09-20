@@ -4,7 +4,7 @@
   padding-bottom: 25px;
   @include flexbox(column, initial, center);
 
-  &.dark{
+  &.dark {
     background-color: $secondary-color-dark;
   }
   h3 {
@@ -13,7 +13,7 @@
   .skills-container {
     @include flexbox(row, space-between, center);
     flex-wrap: wrap;
-    width: 900px;
+    width: 1000px;
     .skill {
       @include flexbox(column, center);
       margin: 20px;
@@ -26,6 +26,9 @@
       span {
         margin: 0 auto;
       }
+      &.Netlify {
+        display: none;
+      }
     }
   }
 }
@@ -33,18 +36,23 @@
 @media screen and (max-width: 1000px) {
   .skills-paragraph {
     .skills-container {
-      width: 600px;
+      width: 800px;
+      .skill {
+        &.Netlify {
+          display: flex;
+        }
+      }
     }
   }
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 800px) {
   .skills-paragraph {
     .skills-container {
-      width: 600px;
+      width: 700px;
     }
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 720px) {
   .skills-paragraph {
     .skills-container {
       width: 500px;
@@ -64,19 +72,14 @@
 @media screen and (max-width: 470px) {
   .skills-paragraph {
     .skills-container {
-
       width: 400px;
-
     }
   }
 }
 @media screen and (max-width: 400px) {
   .skills-paragraph {
     .skills-container {
-
       width: 350px;
-
     }
   }
 }
-

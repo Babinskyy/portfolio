@@ -6,7 +6,7 @@ type GreetingsProps = {
 
 const Greetings = (props:GreetingsProps):JSX.Element => {
     return ( <div className="greetings-container">
-    <div className={`image-container ${props.darkTheme && "dark"}`}>
+    <div className={`image-container ${props.darkTheme ? "dark" : ""}`}>
       <img src={pic} alt="" />
     </div>
     <h1 className="greetings">Hello, I'm Jan.</h1>
