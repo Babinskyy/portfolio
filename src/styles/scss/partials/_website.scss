@@ -7,7 +7,6 @@
         @include flexbox(row, space-between);
         .website-container {
           @include flexbox(column, center, center);
-
           margin-right: 100px;
           a {
             .website-preview {
@@ -258,7 +257,6 @@
     .important {
       font-weight: 600;
       font-size: 30px;
-      // border: 2px solid rgb(146, 146, 146);
       padding: 20px;
       border-radius: 10px;
       text-align: center;
@@ -270,7 +268,7 @@
     }
     .buttons-panel {
       @include flexbox(row, space-between);
-      width: 600px;
+      width: 1000px;
       a {
         @include aButton(#eee, 20px, 250px);
         // margin-left: 20px;
@@ -280,27 +278,12 @@
       }
     }
 
-    // @media (max-width: 2400px) {
-    //   .description {
-    //     font-size: 45px;
-    //     width: 1800px;
-    //   }
-    // }
-
-    // @media (max-width: 2100px) {
-    //   .description {
-    //     font-size: 35px;
-    //     width: 1350px;
-    //   }
-    // }
-    @media (max-width: 1600px) {
-      .description {
-        width: 1000px;
-      }
-    }
     @media screen and (max-width: 1040px) {
       .description {
         font-size: 25px;
+        width: 800px;
+      }
+      .buttons-panel {
         width: 800px;
       }
     }
@@ -311,6 +294,13 @@
       }
       .description {
         width: 700px;
+      }
+      .buttons-panel {
+        width: 250px;
+        @include flexbox(column, initial, center);
+        a {
+          margin-bottom: 10px;
+        }
       }
     }
     @media screen and (max-width: 740px) {
@@ -324,42 +314,39 @@
         font-size: 17px;
         width: 450px;
       }
-      .buttons-panel {
-        width: 460px;
-        a {
-          width: 225px;
-        }
-      }
+      // .buttons-panel {
+      //   a {
+      //     width: 225px;
+      //   }
+      // }
     }
     @media screen and (max-width: 500px) {
       .description {
         font-size: 17px;
         width: 400px;
       }
-      .buttons-panel {
-        width: 400px;
-        a {
-          width: 190px;
-          font-size: 15px;
-        }
-      }
+      // .buttons-panel {
+      //   a {
+      //     width: 190px;
+      //     font-size: 15px;
+      //   }
+      // }
     }
     @media screen and (max-width: 420px) {
       .description {
         font-size: 17px;
         width: 300px;
       }
-      .buttons-panel {
-        width: 305px;
-        a {
-          width: 140px;
-          font-size: 11px;
-          height: 35px;
-          img {
-            margin-left: 5px;
-          }
-        }
-      }
+      // .buttons-panel {
+      //   a {
+      //     width: 140px;
+      //     font-size: 11px;
+      //     height: 35px;
+      //     img {
+      //       margin-left: 5px;
+      //     }
+      //   }
+      // }
     }
   }
 }

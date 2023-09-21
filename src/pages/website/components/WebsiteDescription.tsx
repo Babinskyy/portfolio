@@ -1,5 +1,5 @@
 import { WebsiteType } from "../../../common/data/websites";
-import github from "../../../common/images/websites/github.png"
+import github from "../../../common/images/websites/github.png";
 
 type WebsiteDescriptionProps = {
   darkTheme: boolean;
@@ -30,6 +30,16 @@ const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
           Visit on GitHub
           <img src={github} alt="icon" />
         </a>
+        {props.website?.server && (
+          <a
+            href={props.website?.server}
+            target="_blank"
+            className={`visit ${props.darkTheme ? "dark" : ""}`}
+          >
+            Server-side code
+            <img src={github} alt="icon" />
+          </a>
+        )}
       </div>
     </div>
   );
