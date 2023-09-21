@@ -23,6 +23,7 @@ export type WebsiteType = {
   name: string;
   url: string;
   github: string;
+  server?: string;
   technologies: string[];
   preview: { light: string; dark: string };
   mobile: { light: string; dark: string };
@@ -37,13 +38,14 @@ const websites: WebsiteType[] = [
     name: "Market Place",
     url: "https://marketplace.yan.software/auth",
     github: "https://github.com/Babinskyy/marketplace",
+    server: "https://github.com/Babinskyy/marketplace-server",
     technologies: ["js", "ts", "react", "postgres", "node", "express"],
     preview: { light: marketLight, dark: marketDark },
     mobile: { light: marketMobileLight, dark: marketMobileDark },
     logo: marketLogo,
     importantMessage: "Login: janek Password: 123",
     description:
-      "The marketplace project I developed draws inspiration from Poland's popular marketplace service, olx.pl. Website allows users to add, delete, and edit their offers, providing a dynamic and user-friendly experience. With essential functionalities like user login, logout, theme change, category filters, and a search bar, the platform allows users to easily search and manage their offers. Demonstrating my proficiency in programming, I used technologies such as React, along with React Hook Form, for the front-end. On the backend, Node.js powers the server, while PostgreSQL serves as the database. Hosting on Heroku ensures reliable server performance, while Netlify serves as the home for the frontend. Images are stored securely on Azure Storage Cloud.",
+      "The marketplace project I developed draws inspiration from Poland's popular marketplace service, olx.pl. Website allows users to add, delete, and edit their offers, providing a dynamic and user-friendly experience. With essential functionalities like user login, logout, theme change, category filters, and a search bar, the platform allows users to easily search and manage their offers. Demonstrating my proficiency in programming, I used technologies such as React, along with React Hook Form, for the front-end. On the backend, Node.js powers the server, while PostgreSQL serves as the database. Hosting on Heroku ensures reliable server performance, while Netlify serves as the home for the frontend. Images are stored securely on Azure Storage Cloud. This application is made by me from scratch.",
   },
   {
     id: 2,
@@ -69,7 +71,7 @@ const websites: WebsiteType[] = [
     logo: chart,
     importantMessage: "",
     description:
-      "Analytics platform is a product designed for office workers. It helped them manage information about drivers and routes all in one place. My job was to listen to what the clients needed and make sure those needs were part of the product. I also focused on making the screens and buttons easy for people to use. This tool showed important data in graphs and bars, which made it easy for users to understand how their company was doing. This project shows my commitment to making products that meet customer needs and are easy to use, while also being visually appealing and helpful for businesses.",
+      "Analytics platform is a product designed for office workers. It helped them manage information about drivers and routes all in one place. My job was to listen to what the clients needed and make sure those needs were part of the product. I also focused on making the screens and buttons easy for people to use. This tool showed important data in graphs and bars, which made it easy for users to understand how their company was doing. This project shows my commitment to making products that meet customer needs and are easy to use, while also being visually appealing and helpful for businesses. As a junior developer, I was supervised by a senior developer on the front-end development of this application.",
   },
   {
     id: 4,
@@ -82,7 +84,7 @@ const websites: WebsiteType[] = [
     logo: delivery,
     importantMessage: "Please open this app in mobile view mode!",
     description:
-      "Driver app is a mobile app customized for drivers of a box catering company, designed to be their trusty companion on the job. This everyday work app organized their delivery tasks by providing a user-friendly interface where they could access a list of delivery addresses, complete with essential information like phone numbers and client-provided descriptions. The app also allowed them to document their work by taking pictures of delivered packages. Drivers could efficiently manage their daily packing tasks, report difficulties via an interactive form, and access notes and any assigned penalties from the office. Additionally, the app provided a transparent view of their earnings, with detailed calculations covering deliveries made throughout the month, as well as any deductions or bonuses. Ensuring ease of use in all conditions, this app was designed to simplify the lives of drivers.",
+      "Driver app is a mobile app customized for drivers of a box catering company, designed to be their trusty companion on the job. This everyday work app organized their delivery tasks by providing a user-friendly interface where they could access a list of delivery addresses, complete with essential information like phone numbers and client-provided descriptions. The app also allowed them to document their work by taking pictures of delivered packages. Drivers could efficiently manage their daily packing tasks, report difficulties via an interactive form, and access notes and any assigned penalties from the office. Additionally, the app provided a transparent view of their earnings, with detailed calculations covering deliveries made throughout the month, as well as any deductions or bonuses. Ensuring ease of use in all conditions, this app was designed to simplify the lives of drivers. As a junior developer, I was supervised by a senior developer on the front-end development of this application.",
   },
 ];
 
