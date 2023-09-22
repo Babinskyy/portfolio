@@ -8,7 +8,7 @@ type WebsiteDescriptionProps = {
 const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
   return (
     <div className="WebsiteDescription">
-      <p className="description">
+      <div className="description">
         {props.website?.importantMessage && (
           <>
             <h2 className={` ${props.darkTheme ? "dark" : ""}`}>Important</h2>
@@ -16,12 +16,12 @@ const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
           </>
         )}
         <h2 className={` ${props.darkTheme ? "dark" : ""}`}>Overview</h2>
-        {props.website?.overview}
+       <p>{props.website?.overview}</p> 
         <h2 className={` ${props.darkTheme ? "dark" : ""}`}>
           What did I learn?
         </h2>
-        {props.website?.learn}
-      </p>
+       <p>{props.website?.learn}</p> 
+      </div>
 
       <div className="buttons-panel">
         <a

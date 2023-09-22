@@ -12,7 +12,7 @@ const Skills = (props: SkillsProps): JSX.Element => {
       <div className="skills-container">
         {skills.map((e, i) => {
           return (
-            <div className={`skill ${e.name}`}>
+            <div className={`skill ${e.name}`} key={e.name}>
               <img src={e.image} alt={e.name + " icon"} />
               <span>{e.name}</span>
             </div>

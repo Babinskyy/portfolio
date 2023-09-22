@@ -38,22 +38,6 @@ const skills: Skill[] = [
     image: ionic,
   },
   {
-    name: "Node",
-    image: node,
-  },
-  {
-    name: "Express",
-    image: express,
-  },
-  {
-    name: "PostgreSQL",
-    image: postgres,
-  },
-  {
-    name: "MongoDB",
-    image: mongo,
-  },
-  {
     name: "HTML",
     image: html,
   },
@@ -68,6 +52,22 @@ const skills: Skill[] = [
   {
     name: "Material UI",
     image: mui,
+  },
+  {
+    name: "Node",
+    image: node,
+  },
+  {
+    name: "Express",
+    image: express,
+  },
+  {
+    name: "PostgreSQL",
+    image: postgres,
+  },
+  {
+    name: "MongoDB",
+    image: mongo,
   },
   {
     name: "Heroku",

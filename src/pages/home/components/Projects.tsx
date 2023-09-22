@@ -12,6 +12,7 @@ const Projects = (props: ProjectsProps): JSX.Element => {
           <a
             href={`website/${e.id}`}
             className={`${props.darkTheme ? "dark" : ""}`}
+            key={i}
           >
             <span>{e.name}</span>
             <img src={e.logo} alt="" />
