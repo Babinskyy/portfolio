@@ -225,6 +225,15 @@
     .preview {
       .website-container {
         margin: 0;
+        .website-preview {
+          &.mobile{
+            img {
+              height: 150px;
+              max-width: 70px;
+            }
+          }
+          
+        }
       }
       .mobile-container {
         a {
@@ -236,6 +245,8 @@
     }
     .skill-list {
       max-width: 250px;
+      max-height: 70px;
+      overflow: hidden;
       li {
         font-size: 12px;
       }
