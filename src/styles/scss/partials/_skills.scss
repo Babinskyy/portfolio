@@ -13,7 +13,7 @@
   .skills-container {
     @include flexbox(row, space-between, center);
     flex-wrap: wrap;
-    width: 1000px;
+    width: 1140px;
     .skill {
       @include flexbox(column, center);
       margin: 20px;
@@ -22,24 +22,32 @@
         width: 100px;
         height: 100px;
         margin-bottom: 10px;
+        transition: .2s;
+        &:hover{
+          transform: scale(1.05);
+        }
       }
       span {
         margin: 0 auto;
       }
-      &.Netlify {
-        display: none;
-      }
+      // &.Netlify {
+      //   display: none;
+      // }
+      // &.PassportJS {
+      //   display: none;
+      // }
+      
     }
   }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1150px) {
   .skills-paragraph {
     .skills-container {
       width: 800px;
       .skill {
-        &.Netlify {
-          display: flex;
+        &.PassportJS {
+          display: none;
         }
       }
     }
@@ -56,6 +64,16 @@
   .skills-paragraph {
     .skills-container {
       width: 500px;
+      .skill{
+        font-size: 14px;
+        img{
+          width: 80px;
+          height: 80px;
+        }
+        &.PassportJS {
+          display: flex;
+        }
+      }
     }
   }
 }
@@ -63,23 +81,32 @@
   .skills-paragraph {
     .skills-container {
       @include flexbox(initial, flex-start);
-      width: 450px;
+      width: 480px;
       flex-wrap: nowrap;
       overflow: auto;
+      .skill{
+        margin: 0px;
+        margin-right: 25px;
+        font-size: 12px;
+        img{
+          width: 65px;
+          height: 65px;
+        }
+      }
     }
   }
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 520px) {
   .skills-paragraph {
     .skills-container {
       width: 400px;
     }
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 420px) {
   .skills-paragraph {
     .skills-container {
-      width: 350px;
+      width: 300px;
     }
   }
 }

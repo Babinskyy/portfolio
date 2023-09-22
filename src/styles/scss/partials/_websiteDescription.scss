@@ -1,0 +1,104 @@
+.WebsiteDescription {
+  @include flexbox(column, center, center);
+
+  .description {
+    text-align: left;
+    width: 1100px;
+    font-size: 25px;
+    h2 {
+      font-size: 34px;
+      &.dark {
+        color: #fff;
+      }
+    }
+    .important {
+      padding: 0;
+    }
+  }
+  .buttons-panel {
+    @include flexbox(row, space-between);
+    width: 1100px;
+    a {
+      @include aButton(#eee, 20px, 250px);
+
+      &.dark {
+        background-color: $secondary-color-dark;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    .description {
+      width: 800px;
+    }
+    .buttons-panel {
+      width: 800px;
+    }
+  }
+  @media screen and (max-width: 840px) {
+    .description {
+      width: 700px;
+    }
+    .buttons-panel {
+      width: 700px;
+
+      a {
+        margin-bottom: 10px;
+        font-size: 15px;
+        width: 200px;
+      }
+    }
+  }
+  @media screen and (max-width: 740px) {
+    .description {
+      font-size: 17px;
+      width: 590px;
+      h2 {
+        font-size: 25px;
+      }
+    }
+    .buttons-panel {
+      @include flexbox(column, initial, center);
+      width: 590px;
+      a {
+        margin-bottom: 10px;
+        font-size: 25px;
+        width: 590px;
+      }
+    }
+  }
+  @media screen and (max-width: 610px) {
+    .description {
+      width: 450px;
+    }
+    .buttons-panel {
+      width: 450px;
+      a {
+        font-size: 20px;
+        width: 450px;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .description {
+      width: 400px;
+    }
+    .buttons-panel {
+      width: 400px;
+      a {
+        width: 400px;
+      }
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .description {
+      width: 300px;
+    }
+    .buttons-panel {
+      width: 300px;
+      a {
+        width: 300px;
+      }
+    }
+  }
+}

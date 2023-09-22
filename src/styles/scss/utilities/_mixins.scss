@@ -25,7 +25,7 @@
   transition: 0.2s;
 
   &:hover {
-    background-color: $contrast-color;
+    background-color: $theme-color;
     cursor: pointer;
     color: $primary-color;
   }
@@ -34,9 +34,7 @@
     color: $contrast-color-dark;
     border: 1px solid rgb(49, 49, 49);
     &:hover {
-      background-color: $contrast-color-dark;
-      cursor: pointer;
-      color: $primary-color-dark;
+      background-color: $theme-color;
     }
   }
   img {

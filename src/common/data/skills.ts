@@ -13,6 +13,7 @@ import netlify from "../images/skills/netlify.png";
 import html from "../images/skills/html.png";
 import css from "../images/skills/css.png";
 import scss from "../images/skills/scss.png";
+import passport from "../images/skills/passport.png";
 
 type Skill = {
   name: string;
@@ -79,6 +80,10 @@ const skills: Skill[] = [
   {
     name: "Netlify",
     image: netlify,
+  },
+  {
+    name: "PassportJS",
+    image: passport,
   },
 ];
 

@@ -22,12 +22,10 @@ const Website = (props: WebsiteProps): JSX.Element => {
   });
   return (
     <div className="Website">
-      {/* <Header darkTheme={props.darkTheme} setDarkTheme={props.setDarkTheme} /> */}
       <div className="website-content">
-      <WebsitePreview darkTheme={props.darkTheme} website={website}/>
-      <WebsiteDescription website={website} darkTheme={props.darkTheme}/>
+        <WebsitePreview darkTheme={props.darkTheme} website={website} />
+        <WebsiteDescription website={website} darkTheme={props.darkTheme} />
       </div>
-      {/* <Footer darkTheme={props.darkTheme} /> */}
     </div>
   );
 };

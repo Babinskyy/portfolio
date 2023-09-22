@@ -53,6 +53,15 @@ const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
           </a>
         </div>
       </div>
+      <ul className="skill-list">
+        {props.website?.stack.map((skill) => {
+          return (
+            <li key={skill} className={`${props.darkTheme ? "dark" : ""}`}>
+              {skill}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };

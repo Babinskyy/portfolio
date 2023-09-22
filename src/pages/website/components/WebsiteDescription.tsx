@@ -8,11 +8,21 @@ type WebsiteDescriptionProps = {
 const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
   return (
     <div className="WebsiteDescription">
-      {props.website?.importantMessage && (
-        <p className="important">{props.website?.importantMessage}</p>
-      )}
+      <p className="description">
+        {props.website?.importantMessage && (
+          <>
+            <h2 className={` ${props.darkTheme ? "dark" : ""}`}>Important</h2>
+            <p className="important">{props.website?.importantMessage}</p>
+          </>
+        )}
+        <h2 className={` ${props.darkTheme ? "dark" : ""}`}>Overview</h2>
+        {props.website?.overview}
+        <h2 className={` ${props.darkTheme ? "dark" : ""}`}>
+          What did I learn?
+        </h2>
+        {props.website?.learn}
+      </p>
 
-      <p className="description">{props.website?.description}</p>
       <div className="buttons-panel">
         <a
           href={props.website?.url}

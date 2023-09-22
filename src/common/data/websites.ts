@@ -24,12 +24,13 @@ export type WebsiteType = {
   url: string;
   github: string;
   server?: string;
-  technologies: string[];
+  stack: string[];
   preview: { light: string; dark: string };
   mobile: { light: string; dark: string };
   logo: string;
   importantMessage: string;
-  description: string;
+  overview: string;
+  learn: string;
 };
 
 const websites: WebsiteType[] = [
@@ -39,52 +40,93 @@ const websites: WebsiteType[] = [
     url: "https://marketplace.yan.software/auth",
     github: "https://github.com/Babinskyy/marketplace",
     server: "https://github.com/Babinskyy/marketplace-server",
-    technologies: ["js", "ts", "react", "postgres", "node", "express"],
+    stack: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "PostgreSQL",
+      "Node",
+      "Express",
+      "Azure",
+      "Heroku",
+      "Netlify",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Material UI",
+      "PassportJS",
+      "JSON Web Token",
+    ],
     preview: { light: marketLight, dark: marketDark },
     mobile: { light: marketMobileLight, dark: marketMobileDark },
     logo: marketLogo,
-    importantMessage: "Login: janek Password: 123",
-    description:
-      "The marketplace project I developed draws inspiration from Poland's popular marketplace service, olx.pl. Website allows users to add, delete, and edit their offers, providing a dynamic and user-friendly experience. With essential functionalities like user login, logout, theme change, category filters, and a search bar, the platform allows users to easily search and manage their offers. Demonstrating my proficiency in programming, I used technologies such as React, along with React Hook Form, for the front-end. On the backend, Node.js powers the server, while PostgreSQL serves as the database. Hosting on Heroku ensures reliable server performance, while Netlify serves as the home for the frontend. Images are stored securely on Azure Storage Cloud. This application is made by me from scratch.",
+    importantMessage: `login: janek, password: 123`,
+    overview:
+      "The marketplace project I developed draws inspiration from popular marketplace services. Website allows users to add, delete, and edit their offers, providing a dynamic and user-friendly experience. With essential functionalities like user login, logout, theme change, category filters, and a search bar, the platform allows users to easily search and manage their offers.",
+    learn:
+      "While developing this application, I had the opportunity to expand my programming skills. I utilized technologies like React for front-end development, and Node.js for the backend. PostgreSQL served as the database, not only ensured data integrity but also deepened my understanding of SQL. Netlify became the frontend's home, while hosting the application on Heroku improved my understanding of server hosting. Securely storing images on Azure Storage Cloud deepened my knowledge of cloud-based solutions. Moreover, I gained hands-on experience in user authentication, thanks to PassportJS and JSON Web Token. This project allowed me to not only showcase my skills but also to continuously learn and apply new technologies to create a functional and secure application. MarketPlace application is made by me from scratch.",
   },
   {
     id: 2,
     name: "Podolog Sopot",
     url: "https://podologsopot.pl/",
     github: "https://github.com/Babinskyy/podolog",
-    technologies: ["js", "ts", "react", "postgres", "node", "express"],
+    stack: ["JavaScript", "React", "Netlify", "HTML", "CSS"],
     preview: { light: podolog, dark: podolog },
     mobile: { light: podologMobile, dark: podologMobile },
     logo: podologLogo,
     importantMessage: "",
-    description:
-      "Podologsopot.pl is a website made at the client's request. This user-friendly platform showcases the podiatrist's expertise, detailed pricing information, and the clinic's location. The site not only offers a thorough description of the podiatrist's services but also ensures easy navigation for potential patients, regardless of the device they're using.",
+    overview:
+      "Podologsopot.pl is a website made at the client's request. This user-friendly platform showcases the podiatrist's expertise, detailed pricing information, and the clinic's location. Template was bought on themeforest.net and then customized to client's needs. The site not only offers a precise description of the podiatrist's services but also ensures easy navigation for potential patients, regardless of the device they're using.",
+    learn:
+      "While working on Podologsopot.pl, I gained hands-on experience in website development and customization. This project allowed me to improve my skills in creating user-friendly interfaces and presenting complex information in a clear and organized manner. Additionally, I learned the importance of effective communication with clients to understand their specific needs.",
   },
   {
     id: 3,
     name: "Analytics",
     url: "https://analytics.babinsky.pl/",
     github: "https://github.com/Babinskyy/BroccoliBoss",
-    technologies: ["js", "ts", "react", "postgres", "node", "express"],
+    stack: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Ionic",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Material UI",
+    ],
     preview: { light: analyticsLight, dark: analyticsDark },
     mobile: { light: analyticsMobileLight, dark: analyticsMobileDark },
     logo: chart,
     importantMessage: "",
-    description:
-      "Analytics platform is a product designed for office workers. It helped them manage information about drivers and routes all in one place. My job was to listen to what the clients needed and make sure those needs were part of the product. I also focused on making the screens and buttons easy for people to use. This tool showed important data in graphs and bars, which made it easy for users to understand how their company was doing. This project shows my commitment to making products that meet customer needs and are easy to use, while also being visually appealing and helpful for businesses. As a junior developer, I was supervised by a senior developer on the front-end development of this application.",
+    overview:
+      "Analytics platform is a product designed for office workers. It helped them manage information about drivers and routes all in one place. My responsibility was to listen to clients' requirements and make sure those needs were part of the product. I also focused on creating user-friendly screens and buttons. The platform presents crucial data through graphs and bars, which make it easy for users to understand how their company is doing. ",
+    learn:
+      "As a junior developer, I worked under the guidance of a senior developer on the front-end development of this application. This experience broadened my knowledge of creating intuitive user interfaces and apply client requirements into design process. I also learned how to present information in a simple and understandable way. Additionally, I gained insights into making products that meet customer needs and are easy to use. This project strengthened my dedication to creating solutions that look good, work well, and help businesses.",
   },
   {
     id: 4,
     name: "Driver App",
     url: "https://driverapp.babinsky.pl/",
     github: "https://github.com/Babinskyy/DriverMobileApp",
-    technologies: ["js", "ts", "react", "postgres", "node", "express"],
+    stack: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Ionic",
+      "HTML",
+      "CSS",
+      "Sass",
+    ],
     preview: { light: driverappLight, dark: driverappDark },
     mobile: { light: driverappDark, dark: driverappLight },
     logo: delivery,
     importantMessage: "Please open this app in mobile view mode!",
-    description:
-      "Driver app is a mobile app customized for drivers of a box catering company, designed to be their trusty companion on the job. This everyday work app organized their delivery tasks by providing a user-friendly interface where they could access a list of delivery addresses, complete with essential information like phone numbers and client-provided descriptions. The app also allowed them to document their work by taking pictures of delivered packages. Drivers could efficiently manage their daily packing tasks, report difficulties via an interactive form, and access notes and any assigned penalties from the office. Additionally, the app provided a transparent view of their earnings, with detailed calculations covering deliveries made throughout the month, as well as any deductions or bonuses. Ensuring ease of use in all conditions, this app was designed to simplify the lives of drivers. As a junior developer, I was supervised by a senior developer on the front-end development of this application.",
+    overview:
+      "The Driver app is a mobile tool made for box catering company drivers, to simplify their daily tasks. This user-friendly app provides delivery addresses with description and allows delivery documentation. Users can report work difficulties via an interactive form. The app also offers a transparent earnings view. It aims to improve driver effectiveness and simplify their work lives.",
+    learn:
+      "As a junior developer, I collaborated with a senior developer on the front-end of this app, using the Ionic framework. This experience provided practical insights into creating user-friendly mobile interfaces, integrating features, and contributing to professional projects. I also gained experience in deploying the app to mobile devices using Android Studio, furthering my technical and professional growth.",
   },
 ];
 
