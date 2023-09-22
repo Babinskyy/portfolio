@@ -19,7 +19,7 @@
     @include flexbox(row, space-between);
     width: 1100px;
     a {
-      @include aButton(#eee, 20px, 250px);
+      @include aButton($secondary-color, 20px, 250px);
 
       &.dark {
         background-color: $secondary-color-dark;
