@@ -18,6 +18,7 @@
   .buttons-panel {
     @include flexbox(row, space-between);
     width: 1100px;
+    margin: 5px 0 20px 0;
     a {
       @include aButton($secondary-color, 20px, 250px);
 

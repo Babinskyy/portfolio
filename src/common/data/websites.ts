@@ -79,7 +79,7 @@ const websites: WebsiteType[] = [
     overview:
       "Podologsopot.pl is a website made at the client's request. This user-friendly platform showcases the podiatrist's expertise, detailed pricing information, and the clinic's location. Template was bought on themeforest.net and then customized to client's needs. The site not only offers a precise description of the podiatrist's services but also ensures easy navigation for potential patients, regardless of the device they're using.",
     learn:
-      "While working on Podologsopot.pl, I gained hands-on experience in website development and customization. This project allowed me to improve my skills in creating user-friendly interfaces and presenting complex information in a clear and organized manner. Additionally, I learned the importance of effective communication with clients to understand their specific needs.",
+      "While working on Podologsopot.pl, I gained hands-on experience in website development and customization. This project allowed me to improve my skills in Vanilla JavaScript, creating user-friendly interfaces and presenting information in a clear and organized manner. Additionally, I learned the importance of effective communication with clients to understand their specific needs.",
   },
   {
     id: 3,
