@@ -32,12 +32,13 @@
         width: 40px;
         background-color: transparent;
         border: none;
+        transition: .2s;
         img {
           height: 40px;
         }
         &:hover {
           cursor: pointer;
-          opacity: 0.6;
+          transform: scale(1.05);
         }
       }
 
@@ -49,7 +50,7 @@
         transition: 0.2s;
 
         &:hover {
-          transform: scale(1.2);
+          transform: scale(1.1);
         }
         label {
           border: 1px solid #616161;
