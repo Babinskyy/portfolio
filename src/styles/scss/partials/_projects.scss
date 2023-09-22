@@ -32,6 +32,18 @@
 @media screen and (max-width: 420px) {
   .projects {
     a {
+      width: 320px;
+      font-size: 27px;
+      img {
+        margin-left: 15px;
+        height: 45px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .projects {
+    a {
       width: 300px;
       font-size: 27px;
       img {

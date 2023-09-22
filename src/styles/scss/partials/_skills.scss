@@ -106,6 +106,13 @@
 @media screen and (max-width: 420px) {
   .skills-paragraph {
     .skills-container {
+      width: 320px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .skills-paragraph {
+    .skills-container {
       width: 300px;
     }
   }
