@@ -95,6 +95,7 @@ const websites: WebsiteType[] = [
       "CSS",
       "Sass",
       "Material UI",
+      "Chart JS"
     ],
     preview: { light: analyticsLight, dark: analyticsDark },
     mobile: { light: analyticsMobileLight, dark: analyticsMobileDark },
