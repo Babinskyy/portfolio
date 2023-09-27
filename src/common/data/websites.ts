@@ -37,7 +37,7 @@ const websites: WebsiteType[] = [
   {
     id: 1,
     name: "Market Place",
-    url: "https://marketplace.yan.software/auth",
+    url: "https://marketplace.yan.software",
     github: "https://github.com/Babinskyy/marketplace",
     server: "https://github.com/Babinskyy/marketplace-server",
     stack: [
