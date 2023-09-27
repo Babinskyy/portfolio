@@ -18,9 +18,9 @@ const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
         <h2 className={` ${props.darkTheme ? "dark" : ""}`}>Overview</h2>
        <p>{props.website?.overview}</p> 
         <h2 className={` ${props.darkTheme ? "dark" : ""}`}>
-          What did I learn?
+          Experience
         </h2>
-       <p>{props.website?.learn}</p> 
+       <p>{props.website?.experience}</p> 
       </div>
 
       <div className="buttons-panel">
