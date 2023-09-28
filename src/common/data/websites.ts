@@ -60,7 +60,7 @@ const websites: WebsiteType[] = [
     preview: { light: marketLight, dark: marketDark },
     mobile: { light: marketMobileLight, dark: marketMobileDark },
     logo: marketLogo,
-    importantMessage: `login: janek, password: 123`,
+    importantMessage: `login: julianna, password: 123`,
     overview:
       "The marketplace project I developed draws inspiration from popular marketplace services. Website allows users to add, delete, and edit their offers, providing a dynamic and user-friendly experience. With essential functionalities like user login, logout, theme change, category filters, and a search bar, the platform allows users to easily search and manage their offers.",
     experience:
@@ -95,7 +95,7 @@ const websites: WebsiteType[] = [
       "CSS",
       "Sass",
       "Material UI",
-      "Chart JS"
+      "Chart JS",
     ],
     preview: { light: analyticsLight, dark: analyticsDark },
     mobile: { light: analyticsMobileLight, dark: analyticsMobileDark },
