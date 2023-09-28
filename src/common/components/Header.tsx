@@ -35,7 +35,7 @@ const Header = (props: HeaderProps): JSX.Element => {
             <img src={githublogo} alt="" />
           </Link>
           <Link
-            to="https://www.linkedin.com/in/jan-babi%C5%84ski-880469229/"
+            to="https://www.linkedin.com/in/jan-babinski-880469229/"
             target="_blank"
           >
             <img src={linkedin} alt="icon" />
