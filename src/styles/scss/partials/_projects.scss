@@ -10,10 +10,31 @@
     text-align: center;
   }
   a {
-    @include aButton($secondary-color, 40px, 500px, 85px, 25px);
+    @include aButton($secondary-color, 40px, 1100px, 85px, 25px);
     &.dark {
       // @include aButton($primary-color-dark);
       background-color: $secondary-color-dark;
+    }
+  }
+}
+@media screen and (max-width: 1150px) {
+  .projects {
+    a {
+      width: 800px;
+    }
+  }
+}
+@media screen and (max-width: 840px) {
+  .projects {
+    a {
+      width: 700px;
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .projects {
+    a {
+      width: 500px;
     }
   }
 }
