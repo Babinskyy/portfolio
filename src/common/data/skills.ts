@@ -14,6 +14,7 @@ import html from "../images/skills/html.png";
 import css from "../images/skills/css.png";
 import scss from "../images/skills/scss.png";
 import passport from "../images/skills/passport.png";
+import redux from "../images/skills/redux.png";
 
 type Skill = {
   name: string;
@@ -32,6 +33,10 @@ const skills: Skill[] = [
   {
     name: "React",
     image: react,
+  },
+  {
+    name: "Redux",
+    image: redux,
   },
   {
     name: "Ionic",
@@ -80,10 +85,6 @@ const skills: Skill[] = [
   {
     name: "Netlify",
     image: netlify,
-  },
-  {
-    name: "PassportJS",
-    image: passport,
   },
 ];
 

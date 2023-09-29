@@ -48,6 +48,7 @@ const websites: WebsiteType[] = [
       "JavaScript",
       "TypeScript",
       "React",
+      "Redux",
       "PostgreSQL",
       "Node",
       "Express",
