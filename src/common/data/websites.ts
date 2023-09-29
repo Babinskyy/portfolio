@@ -18,6 +18,10 @@ import driverappLight from "../images/websites/driverapp-light.png";
 import driverappDark from "../images/websites/driverapp-dark.png";
 import delivery from "../images/websites/delivery.png";
 
+import chessApp from "../images/websites/chessapp.png";
+import chessAppMobile from "../images/websites/chessapp-mobile.png";
+import pawn from "../images/websites/pawn.png";
+
 export type WebsiteType = {
   id: number;
   name: string;
@@ -128,6 +132,30 @@ const websites: WebsiteType[] = [
       "The Driver app is a mobile tool made for box catering company drivers, to simplify their daily tasks. This user-friendly app provides delivery addresses with description and allows delivery documentation. Users can report work difficulties via an interactive form. The app also offers a transparent earnings view. It aims to improve driver effectiveness and simplify their work lives.",
     experience:
       "As a part of a team, I worked on the front-end of this app, using the Ionic framework. This experience provided practical insights into creating user-friendly mobile interfaces, integrating features, and contributing to professional projects. I also gained experience in deploying the app to mobile devices using Android Studio, furthering my technical and professional growth.",
+  },
+  {
+    id: 5,
+    name: "Chess App",
+    url: "https://chess.babinsky.pl/",
+    github: "https://github.com/Babinskyy/chessopeningsapp",
+    stack: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Ionic",
+      "HTML",
+      "CSS",
+      "Sass",
+      "Netlify",
+    ],
+    preview: { light: chessApp, dark: chessApp },
+    mobile: { light: chessAppMobile, dark: chessAppMobile },
+    logo: pawn,
+    importantMessage: "",
+    overview:
+      "The Chess Openings App was my graduation project, focusing on improving chess opening knowledge. This React-based app aimed to help chess enthusiasts improve their opening repertoire. It featured a searchable database of chess openings, allowing users to study and practice various openings on a virtual chessboard.",
+    experience:
+      "Developing the Chess Openings App provided me with valuable experience in React and frontend development. I learned how to create a responsive interface and implement features like the searchable opening database and interactive chessboard. This project highlighted my ability to apply theoretical knowledge to practical applications and create a functional tool for fellow chess fans.",
   },
 ];
 
