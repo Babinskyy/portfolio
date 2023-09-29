@@ -1,8 +1,8 @@
 import marketLight from "../images/websites/marketplace-light.png";
 import marketDark from "../images/websites/marketplace-dark.png";
 import marketLogo from "../images/websites/marketplacesmalllogo.png";
-import marketMobileDark from "../images/websites/marketplace-mobile-dark.png";
-import marketMobileLight from "../images/websites/marketplace-mobile-light.png";
+import marketMobileDark from "../images/websites/marketplace-mobile-dark1.png";
+import marketMobileLight from "../images/websites/marketplace-mobile-light1.png";
 
 import podolog from "../images/websites/podolog.png";
 import podologLogo from "../images/websites/podolog-logo.png";
