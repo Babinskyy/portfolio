@@ -45,7 +45,6 @@ const websites: WebsiteType[] = [
     github: "https://github.com/Babinskyy/marketplace",
     server: "https://github.com/Babinskyy/marketplace-server",
     stack: [
-      "JavaScript",
       "TypeScript",
       "React",
       "Redux",
@@ -69,7 +68,7 @@ const websites: WebsiteType[] = [
     overview:
       "The marketplace project I developed draws inspiration from popular marketplace services. Website allows users to add, delete, and edit their offers, providing a dynamic and user-friendly experience. With essential functionalities like user login, logout, theme change, category filters, and a search bar, the platform allows users to easily search and manage their offers.",
     experience:
-      "While developing this application, I had the opportunity to expand my programming skills. I utilized technologies like React for front-end development, and Node.js for the backend. PostgreSQL served as the database, not only ensured data integrity but also deepened my understanding of SQL. Netlify became the frontend's home, while hosting the application on Heroku improved my understanding of server hosting. Securely storing images on Azure Storage Cloud deepened my knowledge of cloud-based solutions. Moreover, I gained hands-on experience in user authentication, thanks to PassportJS and JSON Web Token. This project allowed me to not only showcase my skills but also to continuously learn and apply new technologies to create a functional and secure application. MarketPlace application is made by me from scratch.",
+      "While developing this application, I had the opportunity to expand my programming skills. I utilized technologies like React for front-end development, and Node.js for the backend. PostgreSQL served as the database, not only ensured data integrity but also deepened my understanding of SQL. Netlify became the frontend's home, while hosting the application on Heroku improved my understanding of server hosting. Securely storing images on Azure Storage Cloud deepened my knowledge of cloud-based solutions. Moreover, I gained hands-on experience in user authentication, thanks to PassportJS and JSON Web Token. Also, this project allowed me to explore Redux for state management, helping me avoid the complexities of prop drilling and create a more efficient application. This project allowed me to not only showcase my skills but also to continuously learn and apply new technologies to create a functional application. MarketPlace application is made by me from scratch.",
   },
   {
     id: 2,
@@ -92,7 +91,6 @@ const websites: WebsiteType[] = [
     url: "https://analytics.babinsky.pl/",
     github: "https://github.com/Babinskyy/BroccoliBoss",
     stack: [
-      "JavaScript",
       "TypeScript",
       "React",
       "Ionic",
@@ -107,7 +105,7 @@ const websites: WebsiteType[] = [
     logo: chart,
     importantMessage: "",
     overview:
-      "Analytics platform is a product designed for office workers. It helped them manage information about drivers and routes all in one place. My responsibility was to listen to clients' requirements and make sure those needs were part of the product. I also focused on creating user-friendly screens and buttons. The platform presents crucial data through graphs and bars, which make it easy for users to understand how their company is doing. ",
+      "Analytics platform is a product designed for office workers. It helped them manage information about drivers and routes all in one place. My responsibility was to listen to client's requirements and make sure those needs were part of the product. I also focused on creating user-friendly screens and buttons. The platform presents crucial data through graphs and bars, which make it easy for users to understand how their company is doing. ",
     experience:
       "As a part of a team, I worked on the front-end development of this application. This experience broadened my knowledge of creating intuitive user interfaces and apply client requirements into design process. I also learned how to present information in a simple and understandable way. Additionally, I gained insights into making products that meet customer needs and are easy to use. This project strengthened my dedication to creating solutions that look good, work well, and help businesses.",
   },
@@ -116,15 +114,7 @@ const websites: WebsiteType[] = [
     name: "Driver App",
     url: "https://driverapp.babinsky.pl/",
     github: "https://github.com/Babinskyy/DriverMobileApp",
-    stack: [
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Ionic",
-      "HTML",
-      "CSS",
-      "Sass",
-    ],
+    stack: ["TypeScript", "React", "Ionic", "HTML", "CSS", "Sass"],
     preview: { light: driverappLight, dark: driverappDark },
     mobile: { light: driverappDark, dark: driverappLight },
     logo: delivery,
@@ -139,16 +129,7 @@ const websites: WebsiteType[] = [
     name: "Chess App",
     url: "https://chess.babinsky.pl/",
     github: "https://github.com/Babinskyy/chessopeningsapp",
-    stack: [
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Ionic",
-      "HTML",
-      "CSS",
-      "Sass",
-      "Netlify",
-    ],
+    stack: ["TypeScript", "React", "Ionic", "HTML", "CSS", "Sass", "Netlify"],
     preview: { light: chessApp, dark: chessApp },
     mobile: { light: chessAppMobile, dark: chessAppMobile },
     logo: pawn,
