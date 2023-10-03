@@ -64,9 +64,9 @@ const websites: WebsiteType[] = [
     logo: marketLogo,
     importantMessage: `login: janek, password: 123`,
     overview:
-      "The marketplace project I developed draws inspiration from popular marketplace services. Website allows users to add, delete, and edit their offers, providing a dynamic and user-friendly experience. With essential functionalities like user login, logout, theme change, category filters, and a search bar, the platform allows users to easily search and manage their offers.",
+      "The Market Place project I developed draws inspiration from popular market place services. Website allows users to add, delete and edit their offers, providing a dynamic and user-friendly experience. With essential functionalities like user login, logout, theme change, category filters, and a search bar, the platform allows users to easily search and manage their offers.",
     experience:
-      "While developing this application, I had the opportunity to expand my programming skills. I utilized technologies like React for front-end development and Node.js for the backend. PostgreSQL served as the database, not only storing data but also deepened my understanding of SQL. Netlify hosted the frontend, and hosting the backend application on Heroku improved my skills in server management. Storing images on Azure Storage Cloud deepened my knowledge of cloud-based solutions. Additionally, I gained hands-on experience in user authentication using PassportJS and JSON Web Token.  Furthermore, this project allowed me to explore Redux for efficient state management, eliminating the complexities of prop drilling. Overall, this project enabled me to showcase my skills and continually learn and apply new technologies to create a fully functional application. MarketPlace application was developed by me entirely from scratch.",
+      "While developing this application, I had the opportunity to expand my programming skills. I utilized technologies like React for front-end development and Node.js for the backend. PostgreSQL served as the database, not only storing data but also deepened my understanding of SQL. Netlify hosted the frontend, and hosting the backend application on Heroku improved my skills in server management. Storing images on Azure Storage Cloud deepened my knowledge of cloud-based solutions. Additionally, I gained hands-on experience in user authentication using PassportJS and JSON Web Token.  Furthermore, this project allowed me to explore Redux for efficient state management, eliminating the complexities of prop drilling. Overall, this project enabled me to showcase my skills and continually learn and apply new technologies to create a fully functional application. Market Place application was developed by me entirely from scratch.",
   },
   {
     id: 2,
@@ -79,9 +79,9 @@ const websites: WebsiteType[] = [
     logo: podologLogo,
     importantMessage: "",
     overview:
-      "Podologsopot.pl is a website made at the client's request. This user-friendly platform showcases the podiatrist's expertise, detailed pricing information, and the clinic's location. Template was bought on themeforest.net and then customized to client's needs. The site not only offers a precise description of the podiatrist's services but also ensures easy navigation for potential patients, regardless of the device they're using.",
+      "Podolog Sopot is a website made at the client's request. This user-friendly platform showcases the podiatrist's expertise, detailed pricing information, and the clinic's location. Template was bought on themeforest.net and then customized to client's needs. The site not only offers a precise description of the podiatrist's services but also ensures easy navigation for potential patients, regardless of the device they're using.",
     experience:
-      "While working on Podologsopot.pl, I gained hands-on experience in website development and customization. This project allowed me to improve my skills in Vanilla JavaScript, creating user-friendly interfaces and presenting information in a clear and organized manner. Additionally, I learned the importance of effective communication with clients to understand their specific needs.",
+      "While working on Podolog Sopot, I gained hands-on experience in website development and customization. This project allowed me to improve my skills in Vanilla JavaScript, creating user-friendly interfaces and presenting information in a clear and organized manner. Additionally, I learned the importance of effective communication with clients to understand their specific needs.",
   },
   {
     id: 3,
@@ -104,12 +104,12 @@ const websites: WebsiteType[] = [
     url: "https://driverapp.babinsky.pl/",
     github: "https://github.com/Babinskyy/DriverMobileApp",
     stack: ["TypeScript", "React", "Ionic", "Sass"],
-    preview: { light: driverappLight, dark: driverappDark },
-    mobile: { light: driverappDark, dark: driverappLight },
+    preview: { light: driverappLight, dark: driverappLight },
+    mobile: { light: driverappDark, dark: driverappDark },
     logo: delivery,
     importantMessage: "Please open this app in mobile view mode!",
     overview:
-      "The Driver app is a mobile tool made for box catering company drivers, to simplify their daily tasks. This user-friendly app provides delivery addresses with description and allows delivery documentation. Users can report work difficulties via an interactive form. The app also offers a transparent earnings view. It aims to improve driver effectiveness and simplify their work lives.",
+      "The Driver app is a mobile tool made for box catering company drivers, to simplify their daily tasks. This user-friendly app provides delivery addresses with specific descriptions and all the necessary information needed for a courier's everyday work. Users can report work difficulties via an interactive form. The app also offers a transparent earnings view. It aims to improve driver effectiveness and simplify their work lives.",
     experience:
       "As a part of a team, I worked on the front-end of this app, using the Ionic framework. This experience provided practical insights into creating user-friendly mobile interfaces, integrating features, and contributing to professional projects. I also gained experience in deploying the app to mobile devices using Android Studio, furthering my technical and professional growth.",
   },
@@ -124,9 +124,9 @@ const websites: WebsiteType[] = [
     logo: pawn,
     importantMessage: "",
     overview:
-      "The Chess Openings App was my graduation project, focusing on improving chess openings knowledge. This React-based app aimed to help chess enthusiasts improve their opening repertoire. It featured a searchable database of chess openings, allowing users to study and practice various openings on a virtual chessboard.",
+      "The Chess Openings App was my graduation project, focusing on improving chess openings knowledge. This React-based app aimed to help chess enthusiasts improve their opening repertoire. It featured a searchable list of chess openings, allowing users to study and practice various openings on a virtual chessboard.",
     experience:
-      "Developing the Chess Openings App provided me with valuable experience in React and frontend development. I learned how to create a responsive interface and implement features like the searchable opening database and interactive chessboard. This project highlighted my ability to apply theoretical knowledge to practical applications and create a functional tool for fellow chess fans.",
+      "Developing the Chess Openings App introduced me to React and the frontend world. I learned how to create a responsive interface and implement features like the searchable opening list and interactive chessboard. This project highlighted my ability to apply theoretical knowledge to practical applications and create a functional tool for fellow chess fans.",
   },
 ];
 
