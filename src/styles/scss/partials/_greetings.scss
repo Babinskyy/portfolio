@@ -1,11 +1,12 @@
 .greetings-container {
-  @include flexbox(column, initial, center);
-  margin: 53.6px 0px 0px 0px;
+  @include flexbox(row, center, center);
+  margin: 53.6px 0px 53.6px 0px;
   width: 100%;
   .image-container {
     @include flexbox(initial, center, flex-end);
-    min-width: 200px;
-    min-height: 200px;
+    margin-right: 100px;
+    min-width: 250px;
+    min-height: 250px;
     border-radius: 50%;
     background-color: $secondary-color;
     overflow: hidden;
@@ -14,64 +15,131 @@
       background-color: $secondary-color-dark;
     }
     img {
-      height: 190px;
+      height: 230px;
       background-position: center;
     }
   }
-  .greetings {
-    font-size: 80px;
-    font-weight: 600;
-    // margin-bottom: 0;
+  .introduction {
+    width: 530px;
+    .greetings {
+      margin: 0;
+      border-right: solid 5px transparent;
+      white-space: nowrap;
+      font-size: 80px;
+      font-weight: 600;
+      overflow: hidden;
+      animation: animated-text 1.3s steps(10, end) 0.2s 1,
+        animated-cursor 1s step-end 7;
+    }
+    .description {
+      font-size: 18px;
+      opacity: 0;
+      animation: 0.5s anim-lineUp ease-out 1.7s forwards;
+    }
   }
-  .icons-panel {
-    @include flexbox(row, space-between);
-    text-align: center;
-    width: 150px;
-    margin-bottom: 10px;
-    a {
-      width: 50px;
-      background-color: transparent;
-      border: none;
 
-      img {
-        height: 50px;
-      }
-      &:hover {
-        cursor: pointer;
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes animated-cursor {
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: $secondary-color-dark;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .greetings-container {
+    .image-container {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .greetings-container {
+    .introduction {
+      width: 500px;
+      .greetings {
+        font-size: 75px;
       }
     }
   }
 }
-@media screen and (max-width: 520px) {
+
+@media screen and (max-width: 550px) {
   .greetings-container {
- 
+    width: 450px;
+    .introduction {
+      .greetings {
+        font-size: 70px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 490px) {
+  .greetings-container {
     width: 400px;
-    .greetings {
-      font-size: 60px;
-      font-weight: 600;
+    .introduction {
+      .greetings {
+        font-size: 60px;
+      }
     }
   }
 }
 @media screen and (max-width: 420px) {
   .greetings-container {
- 
+    width: 300px;
+    .introduction {
+      .greetings {
+        font-size: 45px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .greetings-container {
     .greetings {
       font-size: 50px;
-   
+      .introduction {
+        .greetings {
+          font-size: 35px;
+        }
+      }
     }
   }
 }
 
 @media screen and (max-width: 400px) {
   .greetings-container {
- 
     width: 300px;
     .image-container {
       min-width: 0px;
-    min-height: 0px;
-    width: 150px;
-    height: 150px;
-      img{
+      min-height: 0px;
+      width: 150px;
+      height: 150px;
+      img {
         height: 140px;
       }
     }

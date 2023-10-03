@@ -9,6 +9,7 @@
   }
   h3 {
     font-size: 30px;
+    margin: 25px 0px 5px;
   }
   .skills-container {
     @include flexbox(row, space-between, center);
@@ -22,8 +23,8 @@
         width: 100px;
         height: 100px;
         margin-bottom: 10px;
-        transition: .2s;
-        &:hover{
+        transition: 0.2s;
+        &:hover {
           transform: scale(1.05);
         }
       }
@@ -36,7 +37,6 @@
       // &.PassportJS {
       //   display: none;
       // }
-      
     }
   }
 }
@@ -64,9 +64,9 @@
   .skills-paragraph {
     .skills-container {
       width: 500px;
-      .skill{
+      .skill {
         font-size: 14px;
-        img{
+        img {
           width: 80px;
           height: 80px;
         }
@@ -81,14 +81,14 @@
   .skills-paragraph {
     .skills-container {
       @include flexbox(initial, flex-start);
-      width: 480px;
+      width: 400px;
       flex-wrap: nowrap;
       overflow: auto;
-      .skill{
+      .skill {
         margin: 0px;
         margin-right: 25px;
         font-size: 12px;
-        img{
+        img {
           width: 65px;
           height: 65px;
         }
@@ -96,13 +96,13 @@
     }
   }
 }
-@media screen and (max-width: 520px) {
-  .skills-paragraph {
-    .skills-container {
-      width: 400px;
-    }
-  }
-}
+// @media screen and (max-width: 520px) {
+//   .skills-paragraph {
+//     .skills-container {
+//       width: 400px;
+//     }
+//   }
+// }
 @media screen and (max-width: 420px) {
   .skills-paragraph {
     .skills-container {

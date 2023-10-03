@@ -25,84 +25,68 @@
         font-weight: 700;
       }
     }
-    .icons-toggle-container {
-      width: 200px;
-      @include flexbox(row, space-between);
-      a {
-        width: 40px;
-        background-color: transparent;
-        border: none;
-        transition: .2s;
-        img {
-          height: 40px;
-        }
-        &:hover {
-          cursor: pointer;
-          transform: scale(1.05);
-        }
+
+    .toggle-switch {
+      @include flexbox(row, center, center);
+
+      position: relative;
+      width: 50px;
+      transition: 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
       }
-
-      .toggle-switch {
-        @include flexbox(row, center, center);
-
-        position: relative;
-        width: 50px;
-        transition: 0.2s;
-
-        &:hover {
-          transform: scale(1.1);
+      label {
+        border: 1px solid #d8d8d8;
+        position: absolute;
+        width: 100%;
+        height: 25px;
+        background-color: #fff;
+        border-radius: 50px;
+        &.dark {
+          background-color: #616161;
+          border: none;
         }
-        label {
-          border: 1px solid #d8d8d8;
+        cursor: pointer;
+        input {
+          position: absolute;
+          display: none;
+        }
+
+        .slider-toggle {
           position: absolute;
           width: 100%;
-          height: 25px;
-          background-color: #fff;
+          height: 100%;
           border-radius: 50px;
-          &.dark {
-            background-color: #616161;
-            border: none;
-          }
-          cursor: pointer;
-          input {
-            position: absolute;
-            display: none;
-          }
+          transition: 0.3s;
+        }
 
-          .slider-toggle {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 50px;
-            transition: 0.3s;
-          }
+        input:checked ~ .slider-toggle {
+          background-color: $primary-color;
+        }
 
-          input:checked ~ .slider-toggle {
-            background-color: $primary-color;
-          }
+        .slider-toggle::before {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 7px;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          box-shadow: inset 5px -2px 0px 0px #fff;
+          background-color: #616161;
+          transition: 0.3s;
+        }
 
-          .slider-toggle::before {
-            content: "";
-            position: absolute;
-            top: 5px;
-            left: 7px;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            box-shadow: inset 5px -2px 0px 0px #fff;
-            background-color: #616161;
-            transition: 0.3s;
-          }
-
-          input:checked ~ .slider-toggle::before {
-            transform: translateX(23px);
-            background-color: #616161;
-            box-shadow: none;
-          }
+        input:checked ~ .slider-toggle::before {
+          transform: translateX(23px);
+          background-color: #616161;
+          box-shadow: none;
         }
       }
     }
   }
+
   @media screen and (max-width: 1150px) {
     .header-container {
       width: 800px;
@@ -126,6 +110,7 @@
   @media screen and (max-width: 490px) {
     .header-container {
       width: 400px;
+      padding: 0;
       .logo-container {
         width: 50px;
         .logo {
@@ -134,7 +119,7 @@
       }
     }
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 420px) {
     .header-container {
       width: 300px;
     }
