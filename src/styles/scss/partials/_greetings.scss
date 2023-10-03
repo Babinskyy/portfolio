@@ -23,12 +23,13 @@
     width: 530px;
     .greetings {
       margin: 0;
+      opacity: 0;
       border-right: solid 5px transparent;
       white-space: nowrap;
       font-size: 80px;
       font-weight: 600;
       overflow: hidden;
-      animation: animated-text 1.3s steps(10, end) 0.2s 1,
+      animation: animated-text 1.3s steps(10, end) 0.2s forwards,
         animated-cursor 1s step-end 7;
     }
     .description {
@@ -38,6 +39,16 @@
     }
   }
 
+  @keyframes animated-text {
+    from {
+      width: 0;
+      opacity: 1;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
   @keyframes anim-lineUp {
     0% {
       opacity: 0;
@@ -49,15 +60,6 @@
     100% {
       opacity: 1;
       transform: translateY(0%);
-    }
-  }
-
-  @keyframes animated-text {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
     }
   }
 
