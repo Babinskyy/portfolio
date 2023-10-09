@@ -12,8 +12,8 @@ const Greetings = (props: GreetingsProps): JSX.Element => {
       <div className="introduction">
         <h1 className="greetings">Hello, I'm Jan.</h1>
         <p className="description">
-          As a full-stack Javascript developer, I'm deeply passionate about
-          programming and have a desire to learn new technologies.
+          I am a full-stack JavaScript developer, deeply passionate about
+          programming, and always eager to learn new technologies.
           <br />
           <br />
           When I'm not immersed in code, you'll find me enjoying my love for

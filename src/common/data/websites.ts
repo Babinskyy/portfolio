@@ -1,25 +1,25 @@
-import marketLight from "../images/websites/marketplace-light.png";
-import marketDark from "../images/websites/marketplace-dark.png";
+import marketLight from "../images/websites/marketplace-light-mockup.png";
+import marketDark from "../images/websites/marketplace-dark-mockup.png";
 import marketLogo from "../images/websites/marketplacesmalllogo.png";
-import marketMobileDark from "../images/websites/marketplace-mobile-dark1.png";
-import marketMobileLight from "../images/websites/marketplace-mobile-light1.png";
+import marketMobileDark from "../images/websites/marketplace-dark-mobile-mockup.png";
+import marketMobileLight from "../images/websites/marketplace-mobile-light-mockup.png";
 
-import podolog from "../images/websites/podolog.png";
+import podolog from "../images/websites/podolog-mockup.png";
 import podologLogo from "../images/websites/podolog-logo.png";
-import podologMobile from "../images/websites/podolog-mobile.png";
+import podologMobile from "../images/websites/podolog-mobile-mockup.png";
 
-import analyticsLight from "../images/websites/analytics-light.png";
-import analyticsDark from "../images/websites/analytics-dark.png";
+import analyticsLight from "../images/websites/analytics-light-mockup.png";
+import analyticsDark from "../images/websites/analytics-dark-mockup.png";
 import chart from "../images/websites/pie-chart.png";
-import analyticsMobileDark from "../images/websites/analytics-mobile-dark.png";
-import analyticsMobileLight from "../images/websites/analytics-mobile-light.png";
+import analyticsMobileDark from "../images/websites/analytics-mobile-dark-mockup.png";
+import analyticsMobileLight from "../images/websites/analytics-mobile-light-mockup.png";
 
-import driverappLight from "../images/websites/driverapp-light.png";
-import driverappDark from "../images/websites/driverapp-dark.png";
+import driverappLight from "../images/websites/driverapp-light-mockup.png";
+import driverappDark from "../images/websites/driverapp-dark-mockup.png";
 import delivery from "../images/websites/delivery.png";
 
-import chessApp from "../images/websites/chessapp.png";
-import chessAppMobile from "../images/websites/chessapp-mobile.png";
+import chessApp from "../images/websites/chessapp-mockup.png";
+import chessAppMobile from "../images/websites/chessapp-mobile-mockup.png";
 import pawn from "../images/websites/pawn.png";
 
 export type WebsiteType = {
