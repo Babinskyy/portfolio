@@ -82,7 +82,7 @@ const websites: WebsiteType[] = [
     github: "https://github.com/Babinskyy/instagram",
     stack: [
       "TypeScript",
-      "Vue",
+      "Vue 3",
       "Pinia",
       "Ant Design",
       "Supabase",
