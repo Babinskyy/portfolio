@@ -22,6 +22,12 @@ import chessApp from "../images/websites/chessapp-mockup.png";
 import chessAppMobile from "../images/websites/chessapp-mobile-mockup.png";
 import pawn from "../images/websites/pawn.png";
 
+import instagramDarkLaptop from "../images/websites/instagram-dark-laptop.png";
+import instagramLightLaptop from "../images/websites/instagram-light-laptop.png";
+import instagramDarkMobile from "../images/websites/instagram-dark-mobile.png";
+import instagramLightMobile from "../images/websites/instagram-light-mobile.png";
+import instagramLogo from "../images/websites/instagramlogo.png";
+
 export type WebsiteType = {
   id: number;
   name: string;
@@ -71,6 +77,29 @@ const websites: WebsiteType[] = [
   },
   {
     id: 2,
+    name: "Instagram",
+    url: "https://instagram.yan.software",
+    github: "https://github.com/Babinskyy/instagram",
+    stack: [
+      "TypeScript",
+      "Vue",
+      "Pinia",
+      "Ant Design",
+      "Supabase",
+      "Netlify",
+      "composition API",
+    ],
+    preview: { light: instagramLightLaptop, dark: instagramDarkLaptop },
+    mobile: { light: instagramLightMobile, dark: instagramDarkMobile },
+    logo: instagramLogo,
+    importantMessage: `email: lebron@james.com, password: 123456`,
+    overview:
+      "My Instagram Clone Project is a web app that mirrors the popular social platform, Instagram and showcases my skills in web development. Using Vue 3, TypeScript, Ant Design components and Supabase for the backend, I aimed to master Vue while creating a feature-rich CRUD app. This Instagram-inspired project includes post uploads, follows, likes, posts edit and deletion and more. Feel free to register or take a quick tour of my Instagram clone using the provided credentials of Lebron James account!",
+    experience:
+      "Working on the Instagram Clone provided hands-on experience in web development. I enhanced my proficiency in Vue 3, TypeScript, and Ant Design for frontend development. The use of Supabase for the backend and Pinia for state management ensured robust data handling. This project began as a learning opportunity, but I extended it by adding functionalities like post likes, editable posts, and post deletion, showcasing my coding and problem-solving skills in a real-world context.",
+  },
+  {
+    id: 3,
     name: "Podolog Sopot",
     url: "https://podologsopot.pl/",
     github: "https://github.com/Babinskyy/podolog",
@@ -85,7 +114,7 @@ const websites: WebsiteType[] = [
       "While working on Podolog Sopot, I gained hands-on experience in website development and customization. This project allowed me to improve my skills in Vanilla JavaScript, creating user-friendly interfaces and presenting information in a clear and organized manner. Additionally, I learned the importance of effective communication with clients to understand their specific needs.",
   },
   {
-    id: 3,
+    id: 4,
     name: "Analytics",
     url: "https://analytics.babinsky.pl/",
     github: "https://github.com/Babinskyy/BroccoliBoss",
@@ -100,7 +129,7 @@ const websites: WebsiteType[] = [
       "As a part of a team, I worked on the front-end development of this application. This experience broadened my knowledge of creating intuitive user interfaces and apply client requirements into design process. I also learned how to present information in a simple and understandable way. Additionally, I gained insights into making products that meet customer needs and are easy to use. This project strengthened my dedication to creating solutions that look good, work well, and help businesses.",
   },
   {
-    id: 4,
+    id: 5,
     name: "Driver App",
     url: "https://driverapp.babinsky.pl/",
     github: "https://github.com/Babinskyy/DriverMobileApp",
@@ -115,7 +144,7 @@ const websites: WebsiteType[] = [
       "As a part of a team, I worked on the front-end of this app, using the Ionic framework. This experience provided practical insights into creating user-friendly mobile interfaces, integrating features, and contributing to professional projects. I also gained experience in deploying the app to mobile devices using Android Studio, furthering my technical and professional growth.",
   },
   {
-    id: 5,
+    id: 6,
     name: "Chess App",
     url: "https://chess.babinsky.pl/",
     github: "https://github.com/Babinskyy/chessopeningsapp",
