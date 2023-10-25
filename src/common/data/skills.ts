@@ -15,13 +15,20 @@ import css from "../images/skills/css.png";
 import scss from "../images/skills/scss.png";
 import passport from "../images/skills/passport.png";
 import redux from "../images/skills/redux.png";
+import vue from "../images/skills/Vue.png";
+import pinia from "../images/skills/pinia.png";
+import ant from "../images/skills/ant.png";
+import supabase from "../images/skills/supabase.png";
+import google from "../images/skills/google.png";
+import github from "../images/skills/GitHub.png";
+import openai from "../images/skills/openai.png";
 
 type Skill = {
   name: string;
   image: string;
 };
 
-const skills: Skill[] = [
+export const frontSkills: Skill[] = [
   {
     name: "JavaScript",
     image: js,
@@ -37,6 +44,14 @@ const skills: Skill[] = [
   {
     name: "Redux",
     image: redux,
+  },
+  {
+    name: "Vue",
+    image: vue,
+  },
+  {
+    name: "Pinia",
+    image: pinia,
   },
   {
     name: "Ionic",
@@ -59,6 +74,13 @@ const skills: Skill[] = [
     image: mui,
   },
   {
+    name: "Ant Design",
+    image: ant,
+  },
+];
+
+export const backSkills = [
+  {
     name: "Node",
     image: node,
   },
@@ -75,17 +97,38 @@ const skills: Skill[] = [
     image: mongo,
   },
   {
-    name: "Heroku",
-    image: heroku,
+    name: "GitHub",
+    image: github,
   },
   {
     name: "Azure",
     image: azure,
   },
   {
+    name: "Heroku",
+    image: heroku,
+  },
+
+  {
     name: "Netlify",
     image: netlify,
   },
+  {
+    name: "Google API",
+    image: google,
+  },
+  {
+    name: "Supabase",
+    image: supabase,
+  },
+  {
+    name: "OpenAI",
+    image: openai,
+  },
+  {
+    name: "Passport",
+    image: passport,
+  },
 ];
 
-export default skills;
+// export default skills;

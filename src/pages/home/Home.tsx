@@ -12,11 +12,9 @@ type HomeProps = {
 const Home = (props: HomeProps): JSX.Element => {
   return (
     <div className="Home">
-      {/* <Header darkTheme={props.darkTheme} setDarkTheme={props.setDarkTheme} /> */}
       <Greetings darkTheme={props.darkTheme} />
       <Skills darkTheme={props.darkTheme} />
       <Projects darkTheme={props.darkTheme} />
-      {/* <Footer darkTheme={props.darkTheme} /> */}
     </div>
   );
 };

@@ -3,6 +3,7 @@
 
 @import "./styles/scss/partials/header";
 @import "./styles/scss/partials/footer";
+@import "./styles/scss/partials/loader";
 @import "./styles/scss/partials/home";
 @import "./styles/scss/partials/website";
 
@@ -13,13 +14,11 @@
 @import "./styles/scss/partials/websitePreview";
 @import "./styles/scss/partials/websiteDescription";
 
-
 .App {
   @include flexbox(column, space-between);
   min-height: 100vh;
   background-color: $primary-color;
   color: $contrast-color;
-  
 
   &.dark {
     background-color: $primary-color-dark;

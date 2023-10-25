@@ -1,4 +1,4 @@
-import skills from "../../../common/data/skills";
+import { frontSkills, backSkills } from "../../../common/data/skills";
 
 type SkillsProps = {
   darkTheme: boolean;
@@ -7,10 +7,20 @@ type SkillsProps = {
 const Skills = (props: SkillsProps): JSX.Element => {
   return (
     <div className={`skills-paragraph ${props.darkTheme ? "dark" : ""}`}>
-      <h3>MY SKILLS</h3>
-      
+      <h2>Frontend</h2>
       <div className="skills-container">
-        {skills.map((e, i) => {
+        {frontSkills.map((e, i) => {
+          return (
+            <div className={`skill ${e.name}`} key={e.name}>
+              <img src={e.image} alt={e.name + " icon"} />
+              <span>{e.name}</span>
+            </div>
+          );
+        })}
+      </div>
+      <h2>Backend & Environement</h2>
+      <div className="skills-container">
+        {backSkills.map((e, i) => {
           return (
             <div className={`skill ${e.name}`} key={e.name}>
               <img src={e.image} alt={e.name + " icon"} />

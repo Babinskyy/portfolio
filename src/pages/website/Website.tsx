@@ -1,9 +1,6 @@
-import Footer from "../../common/components/Footer";
-import Header from "../../common/components/Header";
 import WebsitePreview from "./components/WebsitePreview";
 import { useParams } from "react-router";
 import websites from "../../common/data/websites";
-import { Link } from "react-router-dom";
 import { WebsiteType } from "../../common/data/websites";
 import React, { useEffect, useState } from "react";
 import WebsiteDescription from "./components/WebsiteDescription";
