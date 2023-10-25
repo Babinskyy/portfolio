@@ -78,7 +78,7 @@ const websites: WebsiteType[] = [
   {
     id: 2,
     name: "Instagram",
-    url: "https://instagram.yan.software",
+    url: "https://instagramclone.yan.software",
     github: "https://github.com/Babinskyy/instagram",
     stack: [
       "Vue 3",
