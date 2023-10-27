@@ -11,7 +11,7 @@ type HomeProps = {
 
 const Home = (props: HomeProps): JSX.Element => {
   return (
-    <div className="Home">
+    <div className="home">
       <Greetings darkTheme={props.darkTheme} />
       <Skills darkTheme={props.darkTheme} />
       <Projects darkTheme={props.darkTheme} />

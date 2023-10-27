@@ -1,39 +1,35 @@
 import { WebsiteType } from "../../../common/data/websites";
 import Loader from "../../../common/components/Loader";
+import { useState } from "react";
 
 type WebsitePreviewProps = {
   darkTheme: boolean;
   website: WebsiteType | undefined;
 };
 
-let isImageLoaded = false;
-
-const onLoad = () => {
-  console.log(isImageLoaded);
-  isImageLoaded = true;
-  console.log(isImageLoaded);
-};
-
 const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
+  const [loading, setLoading] = useState(true);
+
+  const imageLoaded = () => {
+    console.log("loaded");
+    setLoading(false);
+  };
   return (
     <div className="WebsitePreview">
       <h1>{props.website?.name}</h1>
       <div className="preview">
         <div className="website-container">
           <a href={props.website?.url} target="_blank">
-            <div
-              className={`website-preview ${props.darkTheme ? "dark" : ""} ${
-                props.website?.id === 4 ? "mobile" : ""
-              }`}
-            >
+            <div className={`website-preview ${props.darkTheme ? "dark" : ""}`}>
               <img
                 src={
                   props.darkTheme
                     ? props.website?.preview.dark
                     : props.website?.preview.light
                 }
-                alt="website-preview"
-                onLoad={onLoad}
+                alt="website-desktop-preview"
+                loading="lazy"
+                onLoad={imageLoaded}
               />
             </div>
           </a>
@@ -50,7 +46,7 @@ const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
                     ? props.website?.mobile.dark
                     : props.website?.mobile.light
                 }
-                alt=""
+                alt="website-mobile-preview"
               />
             </div>
           </a>
