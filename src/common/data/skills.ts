@@ -66,7 +66,7 @@ export const frontSkills: Skill[] = [
     image: css,
   },
   {
-    name: "Sass",
+    name: "Scss",
     image: scss,
   },
   {
