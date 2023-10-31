@@ -18,7 +18,7 @@ const Skills = (props: SkillsProps): JSX.Element => {
           );
         })}
       </div>
-      <h2>Backend & Environement</h2>
+      <h2>Backend & Environment</h2>
       <div className="skills-container">
         {backSkills.map((e, i) => {
           return (
