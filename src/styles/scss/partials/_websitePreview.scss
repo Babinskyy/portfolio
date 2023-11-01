@@ -5,6 +5,7 @@
     @include flexbox(row, center, center);
   }
   .preview {
+    height: 450px;
     @include flexbox(row, space-between);
     .website-container {
       @include flexbox(column, center, center);
@@ -112,6 +113,7 @@
       height: 335px;
     }
     .preview {
+      height: 335px;
       .website-container {
         a {
           .website-preview {
@@ -141,6 +143,7 @@
       height: 280px;
     }
     .preview {
+      height: 280px;
       .website-container {
         a {
           .website-preview {
@@ -170,6 +173,7 @@
       height: 230px;
     }
     .preview {
+      height: 230px;
       .website-container {
         a {
           .website-preview {
@@ -205,6 +209,7 @@
       height: 200px;
     }
     .preview {
+      height: 200px;
       .website-container {
         a {
           .website-preview {
@@ -233,9 +238,6 @@
     }
   }
   @media screen and (max-width: 500px) {
-    .loader-container {
-      height: 150px;
-    }
     .preview {
       .website-container {
         margin: 0;

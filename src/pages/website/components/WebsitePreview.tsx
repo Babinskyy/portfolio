@@ -43,7 +43,6 @@ const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
                 }
                 alt="website-desktop-preview"
                 onLoad={() => {
-                  console.log("dekstop");
                   imageLoaded("desktop");
                 }}
               />
@@ -64,7 +63,6 @@ const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
                 }
                 alt="website-mobile-preview"
                 onLoad={() => {
-                  console.log("mobile");
                   imageLoaded("mobile");
                 }}
               />
