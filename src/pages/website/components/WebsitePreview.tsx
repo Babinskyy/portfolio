@@ -8,16 +8,30 @@ type WebsitePreviewProps = {
 };
 
 const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
-  const [loading, setLoading] = useState(true);
-
-  const imageLoaded = () => {
-    console.log("loaded");
-    setLoading(false);
+  const [loadedImages, setLoadedImages] = useState({ mobile: false, desktop: false });
+  const imageLoaded = (image: "mobile" | "desktop") => {
+    setLoadedImages((prevLoadedImages) => ({
+      ...prevLoadedImages,
+      [image]: true,
+    }));
   };
   return (
     <div className="WebsitePreview">
       <h1>{props.website?.name}</h1>
-      <div className="preview">
+      <div
+        className="loader-container"
+        style={{
+          display: loadedImages.mobile && loadedImages.desktop ? "none" : "flex",
+        }}
+      >
+        <Loader />
+      </div>
+      <div
+        className="preview"
+        style={{
+          display: loadedImages.mobile && loadedImages.desktop ? "flex" : "none",
+        }}
+      >
         <div className="website-container">
           <a href={props.website?.url} target="_blank">
             <div className={`website-preview ${props.darkTheme ? "dark" : ""}`}>
@@ -28,8 +42,10 @@ const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
                     : props.website?.preview.light
                 }
                 alt="website-desktop-preview"
-                loading="lazy"
-                onLoad={imageLoaded}
+                onLoad={() => {
+                  console.log("dekstop");
+                  imageLoaded("desktop");
+                }}
               />
             </div>
           </a>
@@ -47,6 +63,10 @@ const WebsitePreview = (props: WebsitePreviewProps): JSX.Element => {
                     : props.website?.mobile.light
                 }
                 alt="website-mobile-preview"
+                onLoad={() => {
+                  console.log("mobile");
+                  imageLoaded("mobile");
+                }}
               />
             </div>
           </a>
