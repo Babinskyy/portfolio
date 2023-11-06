@@ -94,7 +94,7 @@ const websites: WebsiteType[] = [
     logo: instagramLogo,
     importantMessage: `email: lebron@james.com, password: 123456`,
     overview:
-      "Instagram Clone Project is a web app that mirrors the popular social platform, Instagram and showcases my skills in web development. Using Vue 3, TypeScript, Ant Design components and Supabase for the backend, I aimed to master Vue while creating a feature-rich CRUD app. This Instagram-inspired project includes post uploads, follows, likes, posts edit and deletion and more. Feel free to register or take a quick tour of my Instagram clone using the provided credentials of Lebron James account!",
+      "Instagram Clone Project is a web application that mirrors the popular social platform - Instagram. Using Vue 3, TypeScript, Ant Design components and Supabase for the backend, I aimed to master Vue while creating a feature-rich CRUD app. This Instagram-inspired project includes post uploads, follows, likes, posts edit and deletion and more. Feel free to register or take a quick tour of my Instagram clone using the provided credentials of Lebron James account!",
     experience:
       "Working on the Instagram Clone provided hands-on experience in web development. I enhanced my proficiency in Vue 3, TypeScript, and Ant Design for frontend development. The use of Supabase for the backend and Pinia for state management ensured robust data handling. This project began as a learning opportunity, but I extended it by adding functionalities like post likes, editable posts and post deletion, showcasing my coding and problem-solving skills in a real-world context.",
   },
