@@ -104,7 +104,7 @@ const websites: WebsiteType[] = [
   },
   {
     id: 3,
-    name: "AI Chatbot",
+    name: "AI Assistant",
     url: "https://aiassistant.yan.software/",
     github: "https://github.com/Babinskyy/AI-frontend",
     server: "https://github.com/Babinskyy/AI-backend",
@@ -128,7 +128,7 @@ const websites: WebsiteType[] = [
     logo: airobot,
     importantMessage: "email: john@email.com, password: 123456",
     overview:
-      "The AI Assistant project reflects my keen interest in AI technology. Motivated by a desire to delve into OpenAI API, I used a tech stack featuring React, TypeScript, Vite, Socket.IO, Node, Express, MongoDB. This web application not only represents a personal exploration into the capabilities of AI but also serves a practical purpose — I'm now ready to create chatbots for clients' websites to efficiently respond to customer inquiries and streamline operational processes. Feel free to create new account or use credentials provided in the 'Important' section above.",
+      "The AI Assistant is a Chat Bot project, which reflects my keen interest in AI technology. Motivated by a desire to delve into OpenAI API, I used a tech stack featuring React, TypeScript, Vite, Socket.IO, Node, Express, MongoDB. This web application not only represents a personal exploration into the capabilities of AI but also serves a practical purpose — I'm now ready to create chatbots for clients' websites to efficiently respond to customer inquiries and streamline operational processes. Feel free to create new account or use credentials provided in the 'Important' section above.",
     experience:
       "Leveraging technologies such as React, TypeScript, Vite, Socket.IO, Node, and the OpenAI API, I cultivated a deep understanding of GPT-3.5-Turbo's and GPT-4's capabilities. The implementation of websockets for real-time communication not only allowed the chatbot to respond instantly but also honed my skills in this crucial aspect of modern web applications. Through this project, I not only explored my passion for AI but also gained hands-on experience in deploying secure and scalable solutions using WebSockets, MongoDB, Bcrypt, JWT, and platforms like Azure and Netlify.",
   },
