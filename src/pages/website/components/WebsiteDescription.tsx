@@ -16,11 +16,9 @@ const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
           </>
         )}
         <h2 className={` ${props.darkTheme ? "dark" : ""}`}>Overview</h2>
-       <p>{props.website?.overview}</p> 
-        <h2 className={` ${props.darkTheme ? "dark" : ""}`}>
-          Experience
-        </h2>
-       <p>{props.website?.experience}</p> 
+        <p>{props.website?.overview}</p>
+        <h2 className={` ${props.darkTheme ? "dark" : ""}`}>Experience</h2>
+        <p>{props.website?.experience}</p>
       </div>
 
       <div className="buttons-panel">
@@ -46,7 +44,7 @@ const WebsiteDescription = (props: WebsiteDescriptionProps): JSX.Element => {
             target="_blank"
             className={`visit ${props.darkTheme ? "dark" : ""}`}
           >
-            Server-side code
+            Backend code
             <img src={github} alt="icon" />
           </a>
         )}
