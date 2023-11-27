@@ -28,6 +28,10 @@ import instagramDarkMobile from "../images/websites/instagram-dark-mobile.png";
 import instagramLightMobile from "../images/websites/instagram-light-mobile.png";
 import instagramLogo from "../images/websites/instagramlogo.png";
 
+import airobot from "../images/websites/artificial-intelligence.png";
+import ailaptop from "../images/websites/ai-laptop.png";
+import aiphone from "../images/websites/ai-phone.png";
+
 export type WebsiteType = {
   id: number;
   name: string;
@@ -100,6 +104,36 @@ const websites: WebsiteType[] = [
   },
   {
     id: 3,
+    name: "AI Chatbot",
+    url: "https://aiassistant.yan.software/",
+    github: "https://github.com/Babinskyy/AI-frontend",
+    server: "https://github.com/Babinskyy/AI-backend",
+    stack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Socket.IO",
+      "Node",
+      "Express",
+      "MongoDB",
+      "OpenAI API",
+      "Scss",
+      "Bcrypt",
+      "JWT",
+      "Azure",
+      "Netlify",
+    ],
+    preview: { light: ailaptop, dark: ailaptop },
+    mobile: { light: aiphone, dark: aiphone },
+    logo: airobot,
+    importantMessage: "email: john@email.com, password: 123456",
+    overview:
+      "The AI Assistant project reflects my keen interest in AI technology. Motivated by a desire to delve into OpenAI API, I used a tech stack featuring React, TypeScript, Vite, Socket.IO, Node, Express, MongoDB. This web application not only represents a personal exploration into the capabilities of AI but also serves a practical purpose — I'm now ready to create chatbots for clients' websites to efficiently respond to customer inquiries and streamline operational processes. Feel free to create new account or use credentials provided in the 'Important' section above.",
+    experience:
+      "Leveraging technologies such as React, TypeScript, Vite, Socket.IO, Node, and the OpenAI API, I cultivated a deep understanding of GPT-3.5-Turbo's and GPT-4's capabilities. The implementation of websockets for real-time communication not only allowed the chatbot to respond instantly but also honed my skills in this crucial aspect of modern web applications. Through this project, I not only explored my passion for AI but also gained hands-on experience in deploying secure and scalable solutions using WebSockets, MongoDB, Bcrypt, JWT, and platforms like Azure and Netlify.",
+  },
+  {
+    id: 4,
     name: "Podolog Sopot",
     url: "https://podologsopot.pl/",
     github: "https://github.com/Babinskyy/podolog",
@@ -114,7 +148,7 @@ const websites: WebsiteType[] = [
       "While working on Podolog Sopot, I gained hands-on experience in website development and customization. This project allowed me to improve my skills in Vanilla JavaScript, creating user-friendly interfaces and presenting information in a clear and organized manner. Additionally, I learned the importance of effective communication with clients to understand their specific needs.",
   },
   {
-    id: 4,
+    id: 5,
     name: "Analytics",
     url: "https://analytics.babinsky.pl/",
     github: "https://github.com/Babinskyy/BroccoliBoss",
@@ -129,7 +163,7 @@ const websites: WebsiteType[] = [
       "As a part of a team, I worked on the front-end development of this application. This experience broadened my knowledge of creating intuitive user interfaces and apply client requirements into design process. I also learned how to present information in a simple and understandable way. Additionally, I gained insights into making products that meet customer needs and are easy to use. This project strengthened my dedication to creating solutions that look good, work well, and help businesses.",
   },
   {
-    id: 5,
+    id: 6,
     name: "Driver App",
     url: "https://driverapp.babinsky.pl/",
     github: "https://github.com/Babinskyy/DriverMobileApp",
@@ -144,7 +178,7 @@ const websites: WebsiteType[] = [
       "As a part of a team, I worked on the front-end of this app, using the Ionic framework. This experience provided practical insights into creating user-friendly mobile interfaces, integrating features, and contributing to professional projects. I also gained experience in deploying the app to mobile devices using Android Studio, furthering my technical and professional growth.",
   },
   {
-    id: 6,
+    id: 7,
     name: "Chess App",
     url: "https://chess.babinsky.pl/",
     github: "https://github.com/Babinskyy/chessopeningsapp",
