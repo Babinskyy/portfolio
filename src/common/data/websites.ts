@@ -85,7 +85,7 @@ const websites: WebsiteType[] = [
     url: "https://instagramclone.yan.software",
     github: "https://github.com/Babinskyy/instagram",
     stack: [
-      "Vue 3",
+      "Vue",
       "TypeScript",
       "Pinia",
       "Ant Design",
