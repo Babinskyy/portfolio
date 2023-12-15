@@ -12,12 +12,12 @@ const Greetings = (props: GreetingsProps): JSX.Element => {
       <div className="introduction">
         <h1 className="greetings">Hello, I'm Jan.</h1>
         <p className="description">
-          I'm a Full Stack JavaScript developer, deeply passionate about programming, and
-          always eager to learn new technologies.
+          I'm a Full Stack JavaScript developer, deeply passionate about
+          programming, and always eager to learn new technologies.
           <br />
           <br />
-          When I'm not immersed in code, you'll find me enjoying my love for chess or
-          absorbed in the fascinating world of books.
+          When I'm not immersed in code, you can find me enjoying my love for
+          chess or absorbed in the fascinating world of books.
         </p>
       </div>
     </div>

@@ -1,5 +1,3 @@
-import Footer from "../../common/components/Footer";
-import Header from "../../common/components/Header";
 import Greetings from "./components/Greetings";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
