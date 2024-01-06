@@ -12,7 +12,7 @@ const Home = (props: HomeProps): JSX.Element => {
     <div className="home">
       <Greetings darkTheme={props.darkTheme} />
       <Skills darkTheme={props.darkTheme} />
-      <Projects darkTheme={props.darkTheme} />
+      {/* <Projects darkTheme={props.darkTheme} /> */}
     </div>
   );
 };
