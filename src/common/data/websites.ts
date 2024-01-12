@@ -158,7 +158,7 @@ const websites: WebsiteType[] = [
     logo: chart,
     importantMessage: "",
     overview:
-      "The Analytics platform is a product designed for office workers. It helped them manage information about drivers and routes all in one place. My responsibility was to listen to client's requirements and make sure those needs were part of the product. I also focused on creating user-friendly screens and buttons. The platform presents crucial data through graphs and bars, which make it easy for users to understand how their company is doing. ",
+      "Analytics platform is a product designed for office workers. It helped them manage information about drivers and routes all in one place. My responsibility was to listen to client's requirements and make sure those needs were part of the product. I also focused on creating user-friendly screens and buttons. The platform presents crucial data through graphs and bars, which make it easy for users to understand how their company is doing. ",
     experience:
       "As a part of a team, I worked on the front-end development of this application. This experience broadened my knowledge of creating intuitive user interfaces and apply client requirements into design process. I also learned how to present information in a simple and understandable way. Additionally, I gained insights into making products that meet customer needs and are easy to use. This project strengthened my dedication to creating solutions that look good, work well, and help businesses.",
   },
